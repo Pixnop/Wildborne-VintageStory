@@ -1,0 +1,149 @@
+site_name: Wildborne Wiki
+site_description: Wiki officiel du modpack Wildborne pour Vintage Story - 98 mods pour une expérience immersive
+site_author: Wildborne Team
+site_url: https://wildborne.wiki
+
+theme:
+  name: material
+  language: fr
+  palette:
+    # Dark mode par défaut
+    - scheme: slate
+      primary: brown
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode clair
+    # Light mode
+    - scheme: default
+      primary: brown
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode sombre
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+    - toc.follow
+
+  icon:
+    logo: material/sword-cross
+
+  favicon: assets/favicon.png
+
+plugins:
+  - search:
+      lang: fr
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/wildborne
+      name: Discord Wildborne
+    - icon: fontawesome/brands/github
+      link: https://github.com/wildborne
+      name: GitHub
+
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Accueil: index.md
+
+  - Faune:
+    - faune/index.md
+    - Mammifères:
+      - faune/mammiferes/bovinae.md
+      - faune/mammiferes/caninae.md
+      - faune/mammiferes/capreolinae.md
+      - faune/mammiferes/cervinae.md
+      - faune/mammiferes/elephantidae.md
+      - faune/mammiferes/felinae.md
+      - faune/mammiferes/machairodontinae.md
+      - faune/mammiferes/manidae.md
+      - faune/mammiferes/pantherinae.md
+      - faune/mammiferes/rhinocerotidae.md
+      - faune/mammiferes/thylacinidae.md
+      - faune/mammiferes/viverridae.md
+      - faune/mammiferes/vombatidae.md
+      - faune/mammiferes/cats.md
+    - Oiseaux:
+      - faune/oiseaux/casuariidae.md
+      - faune/oiseaux/dinornithidae.md
+      - faune/oiseaux/spheniscidae.md
+    - Reptiles & Amphibiens:
+      - faune/reptiles/chelonioidea.md
+      - faune/reptiles/meiolaniidae.md
+    - Mammifères Marins:
+      - faune/marins/iniidae.md
+      - faune/marins/sirenia.md
+    - Interactions:
+      - faune/interactions/index.md
+
+  - Flore:
+    - flore/index.md
+    - Zones Florales:
+      - flore/zones/cape.md
+      - flore/zones/caribbean.md
+      - flore/zones/australia.md
+      - flore/zones/cosmopolitan.md
+      - flore/zones/eastasiatic.md
+      - flore/zones/mediterranean.md
+      - flore/zones/newzealand.md
+    - Plantes:
+      - flore/plantes/wildcraftfruit.md
+      - flore/plantes/wildcrafttree.md
+      - flore/plantes/wildfarmingrevival.md
+      - flore/plantes/herbarium.md
+      - flore/plantes/mycodiversity.md
+
+  - Gameplay:
+    - gameplay/index.md
+    - Raccourcis Clavier: gameplay/raccourcis.md
+    - Cuisine: gameplay/cuisine.md
+    - Combat: gameplay/combat.md
+    - Compétences: gameplay/competences.md
+    - Artisanat: gameplay/artisanat.md
+    - Survie: gameplay/survie.md
+    - Monde: gameplay/monde.md
+
+  - QoL & Divers:
+    - qol/index.md
+    - Stockage: qol/stockage.md
+    - Qualité de Vie: qol/qualite-de-vie.md
+    - Décoration: qol/decoration.md
+    - Bibliothèques: qol/bibliotheques.md
+
+copyright: Copyright &copy; 2024 Wildborne Team
