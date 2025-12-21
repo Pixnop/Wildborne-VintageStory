@@ -135,7 +135,7 @@ Arsenal culinaire complet : nouveaux aliments, fours, casseroles, et système d'
 !!! info "Prérequis"
     - Vintage Story version 1.21.5+
 
-1. Téléchargez le pack Wildborne
+1. Téléchargez le pack Wildborne : https://drive.google.com/drive/folders/1pff80iac0saVa-MJ8CwBhROR5L625chH?usp=sharing
 2. Extrayez les mods dans votre dossier `Mods`
 3. Lancez Vintage Story et créez un nouveau monde
 
