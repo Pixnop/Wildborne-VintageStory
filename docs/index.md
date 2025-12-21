@@ -99,28 +99,28 @@ Stockage intelligent, décorations, qualité de vie et les bibliothèques techni
 <div class="features" markdown>
 
 <div class="feature" markdown>
-<div class="feature-icon">:earth_africa:</div>
+<div class="feature-icon">🌍</div>
 **Régions Biogéographiques**
 
 7 zones florales distinctes inspirées de vraies régions du monde : Cap, Caraïbes, Australie, Méditerranée...
 </div>
 
 <div class="feature" markdown>
-<div class="feature-icon">:dna:</div>
+<div class="feature-icon">🧬</div>
 **Faune Réaliste**
 
 Des familles taxonomiques complètes : félins, canidés, cervidés, et même des espèces éteintes comme les thylacines !
 </div>
 
 <div class="feature" markdown>
-<div class="feature-icon">:crossed_swords:</div>
+<div class="feature-icon">⚔️</div>
 **Combat Refait**
 
 Système de combat entièrement repensé avec arbalètes, armes à feu, et combat coopératif.
 </div>
 
 <div class="feature" markdown>
-<div class="feature-icon">:cook:</div>
+<div class="feature-icon">🍳</div>
 **Cuisine Élaborée**
 
 Arsenal culinaire complet : nouveaux aliments, fours, casseroles, et système d'hydratation.

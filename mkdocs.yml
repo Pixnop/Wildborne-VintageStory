@@ -41,9 +41,9 @@ theme:
     - toc.follow
 
   icon:
-    logo: material/sword-cross
+    logo: material/paw
 
-  favicon: assets/favicon.png
+  favicon: assets/favicon.svg
 
 plugins:
   - search:
