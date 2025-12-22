@@ -9,7 +9,7 @@ description: Wiki officiel du modpack Wildborne pour Vintage Story
 
 **Le modpack ultime pour Vintage Story**
 
-Explorez un monde enrichi par 98 mods soigneusement sélectionnés pour une expérience de survie immersive et authentique.
+Explorez un monde enrichi par 97 mods soigneusement sélectionnés pour une expérience de survie immersive et authentique.
 
 [:material-download: Télécharger](download.md){ .md-button .md-button--primary }
 [Commencer l'exploration](#categories){ .md-button }
