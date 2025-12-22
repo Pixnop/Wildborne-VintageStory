@@ -7,6 +7,7 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DATA_DIR="$SCRIPT_DIR/data"
 MODS_DEST="$DATA_DIR/Mods"
+GITHUB_RELEASE="https://github.com/Pixnop/Wildborne-VintageStory/releases/latest/download"
 
 echo "========================================"
 echo "  WildBorne - Server Setup"
@@ -20,7 +21,6 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-# Function to print status
 status() {
     echo -e "${GREEN}[OK]${NC} $1"
 }
@@ -109,26 +109,51 @@ mkdir -p "$DATA_DIR/Backups"
 status "Done"
 echo ""
 
-# [4/5] Download mods
-echo "[4/5] Downloading mods..."
+# [4/5] Download mods from GitHub Release
+echo "[4/5] Downloading modpack from GitHub Release..."
+echo ""
 
-if command -v python3 &> /dev/null; then
-    if [[ -f "$SCRIPT_DIR/../modlist.txt" ]]; then
-        python3 "$SCRIPT_DIR/../scripts/download_mods.py" 1.21.6
+# Count existing mods
+EXISTING_MODS=$(ls -1 "$MODS_DEST"/*.zip 2>/dev/null | wc -l)
 
-        # Move downloaded mods
-        if [[ -d "$SCRIPT_DIR/../mods" ]]; then
-            mv -f "$SCRIPT_DIR/../mods/"*.zip "$MODS_DEST/" 2>/dev/null || true
-        fi
+if [[ $EXISTING_MODS -gt 50 ]]; then
+    echo "       Mods already installed ($EXISTING_MODS mods)"
+    read -p "       Skip download? (y/n): " SKIP_DL
+    if [[ "$SKIP_DL" == "y" ]] || [[ "$SKIP_DL" == "Y" ]]; then
+        echo ""
+        goto_skip=true
+    fi
+fi
+
+if [[ "$goto_skip" != "true" ]]; then
+    echo "       Downloading from GitHub Releases..."
+    echo "       URL: $GITHUB_RELEASE"
+    echo ""
+
+    # Try curl or wget
+    if command -v curl &> /dev/null; then
+        curl -L -o "$SCRIPT_DIR/modpack.zip" "$GITHUB_RELEASE/Wildborne-1.0.0.zip" 2>/dev/null
+    elif command -v wget &> /dev/null; then
+        wget -O "$SCRIPT_DIR/modpack.zip" "$GITHUB_RELEASE/Wildborne-1.0.0.zip" 2>/dev/null
+    else
+        warning "Neither curl nor wget found"
+        echo "       Please download manually from:"
+        echo "       https://github.com/Pixnop/Wildborne-VintageStory/releases"
+    fi
+
+    if [[ -f "$SCRIPT_DIR/modpack.zip" ]]; then
+        echo "       Extracting mods..."
+        unzip -o -q "$SCRIPT_DIR/modpack.zip" -d "$MODS_DEST/"
+        rm -f "$SCRIPT_DIR/modpack.zip"
         status "Done"
     else
-        warning "modlist.txt not found"
-        echo "       Download mods from GitHub Releases"
+        warning "Download failed"
+        echo ""
+        echo "       Please download manually:"
+        echo "       1. Go to: https://github.com/Pixnop/Wildborne-VintageStory/releases"
+        echo "       2. Download the latest Wildborne-X.X.X.zip"
+        echo "       3. Extract contents to: $MODS_DEST"
     fi
-else
-    warning "Python 3 not found"
-    echo "       Download mods manually from:"
-    echo "       https://github.com/Pixnop/Wildborne-VintageStory/releases"
 fi
 
 echo ""
@@ -147,6 +172,12 @@ fi
 MODCOUNT=$(ls -1 "$MODS_DEST"/*.zip 2>/dev/null | wc -l)
 echo "       Mods installed: $MODCOUNT"
 
+if [[ $MODCOUNT -lt 90 ]]; then
+    echo ""
+    warning "Expected 97 mods, found $MODCOUNT"
+    echo "       Download mods from: https://github.com/Pixnop/Wildborne-VintageStory/releases"
+fi
+
 echo ""
 
 # Make scripts executable
@@ -158,11 +189,19 @@ echo "========================================"
 echo ""
 echo "To start the server: ./start_server.sh"
 echo ""
-echo "IMPORTANT - World generation for Rivers mod:"
-echo "  1. Start server"
-echo "  2. Run these commands BEFORE creating world:"
-echo "     /worldconfig landcover 0.5"
-echo "     /worldconfig landcoverScale 4"
+echo "========================================"
+echo "  IMPORTANT - World Generation Settings"
+echo "========================================"
 echo ""
-echo "Oceans are REQUIRED for rivers to generate!"
+echo "The Rivers mod REQUIRES oceans to generate rivers."
+echo ""
+echo "Run these commands BEFORE creating the world:"
+echo ""
+echo "  /worldconfig landcover 0.5"
+echo "  /worldconfig landcoverScale 4"
+echo ""
+echo "Recommended settings:"
+echo "  - Landcover: 50%"
+echo "  - Landcover Scale: 300-500%"
+echo "  - Ocean presence: ENABLED"
 echo ""

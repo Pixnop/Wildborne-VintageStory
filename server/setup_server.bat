@@ -13,6 +13,8 @@ echo.
 set "SCRIPT_DIR=%~dp0"
 set "DATA_DIR=%SCRIPT_DIR%data"
 set "MODS_DEST=%DATA_DIR%\Mods"
+set "GITHUB_RELEASE=https://github.com/Pixnop/Wildborne-VintageStory/releases/latest/download"
+set "MODPACK_ZIP=Wildborne-latest.zip"
 
 REM Search for Vintage Story installation
 echo [1/5] Searching for Vintage Story...
@@ -98,30 +100,61 @@ if not exist "%DATA_DIR%\Backups" mkdir "%DATA_DIR%\Backups"
 echo       Done
 echo.
 
-echo [4/5] Downloading mods...
-echo       This requires Python 3.x
+echo [4/5] Downloading modpack from GitHub Release...
 echo.
 
-where python >nul 2>nul
-if %ERRORLEVEL% neq 0 (
-    echo       WARNING: Python not found
-    echo       Please download mods manually from:
-    echo       https://github.com/Pixnop/Wildborne-VintageStory/releases
-    echo.
-) else (
-    REM Check if modlist.txt exists
-    if exist "%SCRIPT_DIR%..\modlist.txt" (
-        python "%SCRIPT_DIR%..\scripts\download_mods.py" 1.21.6
+REM Check if mods already exist
+set /a EXISTING_MODS=0
+for %%f in ("%MODS_DEST%\*.zip") do set /a EXISTING_MODS+=1
 
-        REM Move downloaded mods
-        if exist "%SCRIPT_DIR%..\mods\*.zip" (
-            move /Y "%SCRIPT_DIR%..\mods\*.zip" "%MODS_DEST%\" >nul 2>nul
-        )
+if %EXISTING_MODS% gtr 50 (
+    echo       Mods already installed (%EXISTING_MODS% mods)
+    echo       Skip download? (Y/N)
+    set /p "SKIP_DL=Choice: "
+    if /i "!SKIP_DL!"=="Y" goto :skip_download
+)
+
+echo       Downloading from GitHub Releases...
+echo       URL: %GITHUB_RELEASE%
+echo.
+
+REM Try curl (Windows 10+)
+where curl >nul 2>nul
+if %ERRORLEVEL% equ 0 (
+    curl -L -o "%SCRIPT_DIR%modpack.zip" "%GITHUB_RELEASE%/Wildborne-1.0.0.zip" 2>nul
+    if exist "%SCRIPT_DIR%modpack.zip" (
+        echo       Extracting mods...
+        powershell -Command "Expand-Archive -Force '%SCRIPT_DIR%modpack.zip' '%MODS_DEST%'"
+        del "%SCRIPT_DIR%modpack.zip"
+        echo       Done
     ) else (
-        echo       modlist.txt not found
-        echo       Download mods from GitHub Releases
+        echo       Download failed. Please download manually:
+        echo       https://github.com/Pixnop/Wildborne-VintageStory/releases
+    )
+) else (
+    REM Try PowerShell
+    echo       Using PowerShell...
+    powershell -Command "try { Invoke-WebRequest -Uri '%GITHUB_RELEASE%/Wildborne-1.0.0.zip' -OutFile '%SCRIPT_DIR%modpack.zip' } catch { exit 1 }"
+    if exist "%SCRIPT_DIR%modpack.zip" (
+        echo       Extracting mods...
+        powershell -Command "Expand-Archive -Force '%SCRIPT_DIR%modpack.zip' '%MODS_DEST%'"
+        del "%SCRIPT_DIR%modpack.zip"
+        echo       Done
+    ) else (
+        echo.
+        echo       ========================================
+        echo       Automatic download failed.
+        echo       ========================================
+        echo.
+        echo       Please download manually:
+        echo       1. Go to: https://github.com/Pixnop/Wildborne-VintageStory/releases
+        echo       2. Download the latest Wildborne-X.X.X.zip
+        echo       3. Extract contents to: %MODS_DEST%
+        echo.
     )
 )
+
+:skip_download
 echo.
 
 echo [5/5] Verification...
@@ -137,6 +170,12 @@ REM Count mods
 set /a MODCOUNT=0
 for %%f in ("%MODS_DEST%\*.zip") do set /a MODCOUNT+=1
 echo       Mods installed: %MODCOUNT%
+
+if %MODCOUNT% lss 90 (
+    echo.
+    echo       WARNING: Expected 97 mods, found %MODCOUNT%
+    echo       Download mods from: https://github.com/Pixnop/Wildborne-VintageStory/releases
+)
 echo.
 
 echo ========================================
@@ -145,12 +184,20 @@ echo ========================================
 echo.
 echo To start the server: start_server.bat
 echo.
-echo IMPORTANT - World generation for Rivers mod:
-echo   1. Start server
-echo   2. Run these commands BEFORE creating world:
-echo      /worldconfig landcover 0.5
-echo      /worldconfig landcoverScale 4
+echo ========================================
+echo   IMPORTANT - World Generation Settings
+echo ========================================
 echo.
-echo Oceans are REQUIRED for rivers to generate!
+echo The Rivers mod REQUIRES oceans to generate rivers.
+echo.
+echo Run these commands BEFORE creating the world:
+echo.
+echo   /worldconfig landcover 0.5
+echo   /worldconfig landcoverScale 4
+echo.
+echo Recommended settings:
+echo   - Landcover: 50%%
+echo   - Landcover Scale: 300-500%%
+echo   - Ocean presence: ENABLED
 echo.
 pause
