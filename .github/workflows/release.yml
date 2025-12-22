@@ -41,6 +41,8 @@ jobs:
           cd mods
           zip -r ../Wildborne-${{ inputs.version }}.zip .
           cd ..
+          # Create a copy with generic name for latest downloads
+          cp Wildborne-${{ inputs.version }}.zip Wildborne-latest.zip
           echo "Archive size: $(du -h Wildborne-${{ inputs.version }}.zip | cut -f1)"
 
       - name: Create Release
@@ -59,6 +61,8 @@ jobs:
             3. Lancez Vintage Story
 
             Consultez le [Wiki](https://pixnop.github.io/Wildborne-VintageStory/) pour plus de details.
-          files: Wildborne-${{ inputs.version }}.zip
+          files: |
+            Wildborne-${{ inputs.version }}.zip
+            Wildborne-latest.zip
           prerelease: ${{ inputs.prerelease }}
           generate_release_notes: true

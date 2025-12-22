@@ -121,7 +121,7 @@ echo.
 REM Try curl (Windows 10+)
 where curl >nul 2>nul
 if %ERRORLEVEL% equ 0 (
-    curl -L -o "%SCRIPT_DIR%modpack.zip" "%GITHUB_RELEASE%/Wildborne-1.0.0.zip" 2>nul
+    curl -L -o "%SCRIPT_DIR%modpack.zip" "%GITHUB_RELEASE%/Wildborne-latest.zip" 2>nul
     if exist "%SCRIPT_DIR%modpack.zip" (
         echo       Extracting mods...
         powershell -Command "Expand-Archive -Force '%SCRIPT_DIR%modpack.zip' '%MODS_DEST%'"
@@ -134,7 +134,7 @@ if %ERRORLEVEL% equ 0 (
 ) else (
     REM Try PowerShell
     echo       Using PowerShell...
-    powershell -Command "try { Invoke-WebRequest -Uri '%GITHUB_RELEASE%/Wildborne-1.0.0.zip' -OutFile '%SCRIPT_DIR%modpack.zip' } catch { exit 1 }"
+    powershell -Command "try { Invoke-WebRequest -Uri '%GITHUB_RELEASE%/Wildborne-latest.zip' -OutFile '%SCRIPT_DIR%modpack.zip' } catch { exit 1 }"
     if exist "%SCRIPT_DIR%modpack.zip" (
         echo       Extracting mods...
         powershell -Command "Expand-Archive -Force '%SCRIPT_DIR%modpack.zip' '%MODS_DEST%'"

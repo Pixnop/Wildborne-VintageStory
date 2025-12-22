@@ -132,9 +132,9 @@ if [[ "$goto_skip" != "true" ]]; then
 
     # Try curl or wget
     if command -v curl &> /dev/null; then
-        curl -L -o "$SCRIPT_DIR/modpack.zip" "$GITHUB_RELEASE/Wildborne-1.0.0.zip" 2>/dev/null
+        curl -L -o "$SCRIPT_DIR/modpack.zip" "$GITHUB_RELEASE/Wildborne-latest.zip" 2>/dev/null
     elif command -v wget &> /dev/null; then
-        wget -O "$SCRIPT_DIR/modpack.zip" "$GITHUB_RELEASE/Wildborne-1.0.0.zip" 2>/dev/null
+        wget -O "$SCRIPT_DIR/modpack.zip" "$GITHUB_RELEASE/Wildborne-latest.zip" 2>/dev/null
     else
         warning "Neither curl nor wget found"
         echo "       Please download manually from:"
