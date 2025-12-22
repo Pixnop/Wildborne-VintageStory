@@ -11,8 +11,8 @@ description: Wiki officiel du modpack Wildborne pour Vintage Story
 
 Explorez un monde enrichi par 98 mods soigneusement sélectionnés pour une expérience de survie immersive et authentique.
 
-[Commencer l'exploration](#categories){ .md-button .md-button--primary }
-[Liste des mods](faune/index.md){ .md-button }
+[:material-download: Télécharger](download.md){ .md-button .md-button--primary }
+[Commencer l'exploration](#categories){ .md-button }
 
 </div>
 
@@ -130,14 +130,16 @@ Arsenal culinaire complet : nouveaux aliments, fours, casseroles, et système d'
 
 ---
 
-## Installation
+## Installation Rapide
 
 !!! info "Prérequis"
-    - Vintage Story version 1.21.5+
+    - Vintage Story version **1.21.6** ou supérieure
 
-1. Téléchargez le pack [Wildborne](https://drive.google.com/drive/folders/1pff80iac0saVa-MJ8CwBhROR5L625chH?usp=sharing)
+1. [:material-download: Téléchargez le modpack](download.md)
 2. Extrayez les mods dans votre dossier `Mods`
 3. Lancez Vintage Story et créez un nouveau monde
+
+[:octicons-arrow-right-24: Guide d'installation complet](download.md){ .md-button }
 
 
 ---

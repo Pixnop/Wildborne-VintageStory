@@ -1,0 +1,49 @@
+name: Create Modpack Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version du modpack (ex: 1.0.0)'
+        required: true
+        type: string
+      prerelease:
+        description: 'Pre-release?'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create mods archive
+        run: |
+          cd mods
+          zip -r ../Wildborne-${{ inputs.version }}.zip .
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ inputs.version }}
+          name: Wildborne v${{ inputs.version }}
+          body: |
+            ## Wildborne Modpack v${{ inputs.version }}
+
+            Modpack pour Vintage Story 1.21.6+
+
+            ### Installation
+            1. Telechargez `Wildborne-${{ inputs.version }}.zip`
+            2. Extrayez dans votre dossier `Mods`
+            3. Lancez Vintage Story
+
+            Consultez le [Wiki](https://pixnop.github.io/Wildborne-VintageStory/) pour plus de details.
+          files: Wildborne-${{ inputs.version }}.zip
+          prerelease: ${{ inputs.prerelease }}
+          generate_release_notes: true
