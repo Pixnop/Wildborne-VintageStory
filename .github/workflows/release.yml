@@ -7,6 +7,11 @@ on:
         description: 'Version du modpack (ex: 1.0.0)'
         required: true
         type: string
+      game_version:
+        description: 'Version de Vintage Story cible'
+        required: true
+        type: string
+        default: '1.21.6'
       prerelease:
         description: 'Pre-release?'
         required: false
@@ -23,10 +28,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Download mods from API
+        run: python scripts/download_mods.py ${{ inputs.game_version }}
+
       - name: Create mods archive
         run: |
           cd mods
           zip -r ../Wildborne-${{ inputs.version }}.zip .
+          cd ..
+          echo "Archive size: $(du -h Wildborne-${{ inputs.version }}.zip | cut -f1)"
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
@@ -36,7 +51,7 @@ jobs:
           body: |
             ## Wildborne Modpack v${{ inputs.version }}
 
-            Modpack pour Vintage Story 1.21.6+
+            Modpack pour Vintage Story ${{ inputs.game_version }}+
 
             ### Installation
             1. Telechargez `Wildborne-${{ inputs.version }}.zip`

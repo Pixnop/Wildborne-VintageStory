@@ -1,0 +1,128 @@
+# Wildborne Modpack - Liste des mods
+# Format: modid (un par ligne)
+# Les lignes commençant par # sont ignorées
+
+# Cuisine & Alimentation
+aculinaryartillery
+alchemy
+expandedfoods
+fromgoldencombs
+hydrateordiedrate
+diversediets
+herbarium
+metalpots
+pipeleaf
+tankardsandgoblets
+stonebakeoven
+betterfirepit
+
+# Faune - Mammifères
+bovinae
+caninae
+capreolinae
+cervinae
+elephantidae
+felinae
+machairodontinae
+pantherinae
+manidae
+rhinocerotidae
+thylacinidae
+viverridae
+vombatidae
+cats
+wolftaming
+
+# Faune - Oiseaux
+casuariidae
+dinornithidae
+spheniscidae
+
+# Faune - Reptiles & Marins
+chelonioidea
+meiolaniidae
+iniidae
+sirenia
+
+# Faune - Interactions
+animalcages
+butchering
+petai
+
+# Flore - Zones
+floralzonescaperegion
+floralzonescaribbeanregion
+floralzonescentralaustralianregion
+floralzonescosmopolitanregion
+floralzoneseastasiaticregion
+floralzonesmediterraneanregion
+floralzonesneozeylandicregion
+
+# Flore - Plantes
+wildcraftfruit
+wildcrafttree
+wildfarmingrevival
+mycodiversity
+
+# Combat & Armes
+combatoverhaul
+bullseyecontinued
+maltiezcrossbows
+maltiezfirearms
+armory
+cooperativecombatrework
+coopsynergy
+
+# Compétences & Progression
+xskills
+xskillsgilded
+traitacquirer
+theworkingclasses
+
+# Artisanat
+chiseltools
+millwright
+smithingplus
+stonequarry
+toolsmith
+wool
+shearlib
+tailorsdelight
+
+# Monde & Génération
+betterruins
+plainsandvalleys
+rivers
+
+# Stockage
+foodshelves
+morepiles
+purposefulstorage
+shelfobsessed
+sortablestorage
+
+# QoL
+carryon
+egocaribautomapmarkers
+extrainfo
+playercorpse
+playerlist
+prospecttogether
+joyofsailing
+tabletopgames
+hangingoillamps
+firewoodtosticks
+
+# Traders
+bettertraders
+
+# Bibliothèques
+attributerenderinglibrary
+cbr
+commonlib
+configlib
+overhaullib
+vsimgui
+xlib
+vsinstrumentsbase
+vsinstruments_quackpack
