@@ -197,28 +197,95 @@ hide:
     **Prérequis serveur :**
 
     - Vintage Story Server version 1.21.6
-    - Minimum 4 Go de RAM dédiés
-    - ~500 Mo d'espace disque
+    - Minimum 4 Go de RAM dédiés (8 Go recommandés)
+    - ~500 Mo d'espace disque pour les mods
 
-    **Étapes :**
+    **Étapes d'installation :**
 
     1. **Téléchargez** le modpack
     2. **Placez** les mods dans le dossier serveur :
         ```
         [dossier-serveur]/data/Mods
         ```
-    3. **Configurez** `serverconfig.json` (optionnel) :
-        ```json
-        {
-          "MaxClients": 20,
-          "TickRate": 60,
-          "PassTimeWhenEmpty": false
-        }
+    3. **Démarrez** le serveur une première fois pour générer les fichiers de configuration
+    4. **Arrêtez** le serveur et configurez selon vos besoins
+
+    **Configuration serveur (`serverconfig.json`) :**
+
+    ```json
+    {
+      "MaxClients": 20,
+      "TickRate": 60,
+      "PassTimeWhenEmpty": false,
+      "AllowPvP": false,
+      "SpawnCapPlayerScaling": 0.75
+    }
+    ```
+
+=== ":material-earth: Création du Monde"
+
+    **Paramètres recommandés pour la génération du monde :**
+
+    Lors de la création d'un nouveau monde, utilisez ces paramètres pour une expérience optimale avec tous les mods :
+
+    | Paramètre | Valeur recommandée | Raison |
+    |-----------|-------------------|--------|
+    | **World Height** | 384 blocks | Plus d'espace pour les structures |
+    | **Landcover Scale** | 300-500% | Meilleure génération des rivières |
+    | **Landcover** | 50% | Équilibre terre/océan |
+    | **Ocean presence** | Activé | **Requis pour le mod Rivers** |
+
+    !!! warning "Important pour Rivers"
+        **Les océans sont nécessaires pour générer les rivières.** Sans océans, le mod Rivers ne fonctionnera pas correctement. Assurez-vous que la génération d'océans est activée.
+
+    **Commande de création (console serveur) :**
+
+    ```
+    /worldconfig landcover 0.5
+    /worldconfig landcoverScale 4
+    ```
+
+=== ":material-cog: Configuration Avancée"
+
+    **Optimisation des performances :**
+
+    Dans `serverconfig.json` :
+
+    ```json
+    {
+      "MaxClients": 20,
+      "TickRate": 60,
+      "PassTimeWhenEmpty": false,
+      "EntitySpawning": {
+        "SpawnCapPlayerScaling": 0.75,
+        "MaxEntitiesPerChunk": 8
+      }
+    }
+    ```
+
+    **Gestion de la RAM (script de démarrage) :**
+
+    === "Linux"
+
+        ```bash
+        #!/bin/bash
+        mono VintagestoryServer.exe --dataPath data --maxMemory 8192
         ```
-    4. **Démarrez** le serveur
+
+    === "Windows"
+
+        ```batch
+        VintagestoryServer.exe --dataPath data --maxMemory 8192
+        ```
+
+    **Ports à ouvrir :**
+
+    | Port | Protocole | Usage |
+    |------|-----------|-------|
+    | 42420 | TCP/UDP | Port de jeu par défaut |
 
     !!! tip "Pour vos joueurs"
-        Partagez le lien de téléchargement avec vos joueurs - ils doivent avoir les mêmes mods installés !
+        Partagez le lien de téléchargement avec vos joueurs - ils doivent avoir **exactement les mêmes mods** installés !
 
 ---
 
