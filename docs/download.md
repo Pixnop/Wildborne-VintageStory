@@ -192,7 +192,47 @@ hide:
 
 ### Installation Serveur
 
-=== ":material-server: Serveur Dédié"
+=== ":material-script: Scripts Automatiques"
+
+    **Installation automatique avec nos scripts :**
+
+    Des scripts sont disponibles pour configurer automatiquement votre serveur. Ils téléchargent le modpack depuis GitHub Releases et configurent la structure des dossiers.
+
+    [:material-download: Télécharger les scripts serveur](https://github.com/Pixnop/Wildborne-VintageStory/tree/main/server){ .md-button }
+
+    === "Windows"
+
+        ```batch
+        :: 1. Téléchargez le dossier "server" depuis GitHub
+        :: 2. Exécutez le script de configuration
+        setup_server.bat
+
+        :: 3. Démarrez le serveur
+        start_server.bat
+        ```
+
+    === "Linux"
+
+        ```bash
+        # 1. Téléchargez le dossier "server" depuis GitHub
+        # 2. Rendez les scripts exécutables
+        chmod +x *.sh
+
+        # 3. Exécutez le script de configuration
+        ./setup_server.sh
+
+        # 4. Démarrez le serveur
+        ./start_server.sh
+        ```
+
+    **Ce que font les scripts :**
+
+    - :material-check: Détectent automatiquement l'installation de Vintage Story
+    - :material-check: Copient les fichiers serveur nécessaires
+    - :material-check: Téléchargent le modpack depuis GitHub Releases
+    - :material-check: Créent la structure de dossiers (Mods, Saves, Logs, etc.)
+
+=== ":material-server: Installation Manuelle"
 
     **Prérequis serveur :**
 
