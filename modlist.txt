@@ -93,6 +93,8 @@ tailorsdelight
 betterruins
 plainsandvalleys
 rivers
+primitivesurvival
+em
 
 # Stockage
 foodshelves
