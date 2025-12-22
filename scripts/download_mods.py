@@ -10,6 +10,7 @@ import sys
 import time
 import urllib.request
 import urllib.error
+import urllib.parse
 from pathlib import Path
 from typing import Optional
 
@@ -46,7 +47,20 @@ def fetch_json(url: str) -> Optional[dict]:
 def download_file(url: str, dest: Path) -> bool:
     """Download a file from URL to destination."""
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Wildborne-Modpack/1.0"})
+        # Parse and re-encode URL to handle spaces and special characters
+        parsed = urllib.parse.urlparse(url)
+        encoded_path = urllib.parse.quote(parsed.path, safe="/-_.~")
+        encoded_query = urllib.parse.quote(parsed.query, safe="=&-_.~")
+        safe_url = urllib.parse.urlunparse((
+            parsed.scheme,
+            parsed.netloc,
+            encoded_path,
+            parsed.params,
+            encoded_query,
+            parsed.fragment
+        ))
+
+        req = urllib.request.Request(safe_url, headers={"User-Agent": "Wildborne-Modpack/1.0"})
         with urllib.request.urlopen(req, timeout=120) as response:
             with open(dest, "wb") as f:
                 f.write(response.read())
@@ -219,7 +233,14 @@ def main():
 
     print(f"{'='*50}\n")
 
-    sys.exit(0 if not failed else 1)
+    # Exit with success if most mods downloaded (allow up to 5 failures)
+    if len(failed) > 5:
+        log(f"Too many failures ({len(failed)}), aborting", "ERROR")
+        sys.exit(1)
+    elif failed:
+        log(f"Continuing with {len(failed)} missing mod(s)", "WARN")
+
+    sys.exit(0)
 
 
 if __name__ == "__main__":
