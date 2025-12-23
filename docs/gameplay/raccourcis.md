@@ -25,8 +25,16 @@ Le mod de combat refonde complètement les contrôles de combat.
 | `Clic Gauche` | Attaque (maintenir pour charger) |
 | `Clic Droit` | Bloquer / Parer |
 | `Clic Droit` (maintenu) | Viser (arcs, arbalètes) |
+| `Clic Droit + Molette` | Changer la position de prise (lances) |
+| `Clic Droit + Clic Gauche` | Lancer la lance |
+| `Alt + Interaction` | Interagir tout en tenant une arme |
 | `R` | Recharger (armes à feu, arbalètes) |
 | `Molette` | Changer de mode d'attaque |
+
+### Commandes
+| Commande | Action |
+|----------|--------|
+| `.charsel` | Changer de classe (applique nouveaux traits) |
 
 !!! warning "Timing"
     Le combat est basé sur le timing. Relâchez l'attaque au bon moment pour des dégâts maximum.
@@ -132,11 +140,64 @@ Les points d'intérêt (marchands, ruines, etc.) sont automatiquement marqués s
 
 ---
 
+## Alchemy - Potions
+
+| Touche | Action |
+|--------|--------|
+| `[` | Activer/désactiver le HUD des effets de potions |
+| `]` | Déplacer le HUD des effets |
+| `Ctrl + Shift + Clic Droit` | Vider une fiole de potion |
+
+!!! info "Effets temporaires"
+    Les effets de potions disparaissent à la mort ou en quittant le jeu.
+
+---
+
+## Millwright - Moulins
+
+| Touche | Action |
+|--------|--------|
+| `P` | Ouvrir les paramètres du mod |
+| `Échap > Mod Settings` | Configuration avancée |
+
+---
+
 ## Herbarium - Plantes
 
 | Touche | Action |
 |--------|--------|
 | `Shift` (en visant une plante) | Afficher les infos de la plante |
+
+---
+
+## Pipeleaf - Tabac & Pipes
+
+| Touche | Action |
+|--------|--------|
+| `Shift + Clic Droit` | Charger du tabac dans la pipe équipée |
+| `Clic Droit` (maintenu 2s) | Allumer la pipe avec briquet/allumettes |
+| `R` | Fumer (maintenir pour appliquer les effets) |
+| Eau | Lâcher la pipe dans l'eau pour la nettoyer |
+
+!!! tip "Préparation"
+    Faites sécher les herbes/fleurs au feu, puis broyez-les au moulin pour créer du tabac.
+
+---
+
+## Chisel Tools - Ciselage
+
+| Touche | Action |
+|--------|--------|
+| `Clic Gauche` | Utiliser l'outil de ciselage |
+| `Ctrl + Z` | Annuler (avec le Pantographe) |
+
+### Commandes du Pantographe
+| Commande | Action |
+|----------|--------|
+| `.pf list` | Afficher les designs sauvegardés |
+| `.pf save <nom>` | Sauvegarder un design localement |
+| `.pf load <nom>` | Charger un design sauvegardé |
+| `.pf doorsound <son>` | Assigner un son à une porte ciselée |
 
 ---
 
@@ -187,6 +248,49 @@ Utilisez un couteau sur un animal mort pour accéder aux options de dépeçage d
 | `Shift` | Accélérer |
 | `Space` | Freiner |
 | `E` | Monter/descendre du bateau |
+
+---
+
+## Quivers And Sheaths - Équipement
+
+| Touche | Action |
+|--------|--------|
+| `G` | Dégainer/rengainer l'arme principale |
+| `Shift + G` | Dégainer l'arme secondaire |
+| Configurable | Accès rapide aux flèches du carquois |
+
+!!! tip "Configuration"
+    Les raccourcis de dégainage sont configurables dans les paramètres du mod.
+
+---
+
+## CAN Jewelry - Bijoux
+
+| Action | Comment |
+|--------|---------|
+| Tailler une gemme | Utilisez un **outil de taille** sur une gemme brute |
+| Enchâsser | **Clic droit** avec une gemme polie sur une armure/outil |
+| Retirer | Utilisez un **extracteur** sur l'objet enchanté |
+
+---
+
+## Real Smoke - Fumée
+
+| Action | Comment |
+|--------|---------|
+| Évacuer la fumée | Construisez une **cheminée** au-dessus du feu |
+| Ventilation | Les **portes/fenêtres ouvertes** évacuent la fumée |
+
+!!! warning "Attention"
+    La fumée s'accumule et peut devenir dangereuse dans un espace clos !
+
+---
+
+## Auto Map Markers (étendu)
+
+| Touche | Action |
+|--------|--------|
+| `Ctrl + Shift + M` | Ouvrir le menu de configuration |
 
 ---
 

@@ -47,6 +47,12 @@ La soif devient mortelle. La déshydratation tue **deux fois plus vite** que la 
 | Tonneaux (Tuns) | 950L | Stockage massif |
 | Puits | Illimité | Source permanente via aquifère |
 
+??? info "Mods liés"
+    - :material-arrow-right: [Expanded Foods](cuisine.md#expanded-foods) : Soupes et boissons hydratantes
+    - :material-arrow-right: [A Culinary Artillery](cuisine.md#a-culinary-artillery) : Récipients pour boissons
+    - :material-arrow-right: [Rivers](monde.md#rivers) : Sources d'eau naturelles améliorées
+    - :material-arrow-right: [Metal Pots](cuisine.md) : Faire bouillir l'eau
+
 ---
 
 ## Primitive Survival
@@ -77,15 +83,13 @@ La survie à l'état brut, inspirée des techniques ancestrales. Du premier jour
 - **Ponts de singe** pour franchir les ravins
 - **Lanternes en bois** et pots à lucioles pour l'éclairage
 
----
-
-## Synergies
-
-!!! info "Hydratation + Cuisine"
-    Les mods de cuisine ajoutent des boissons qui comptent pour l'hydratation. Le thé et les jus sont particulièrement efficaces.
-
-!!! info "Primitive Survival + Faune"
-    Les pièges de Primitive Survival fonctionnent avec les nouveaux animaux du modpack. Chassez efficacement les petits mammifères !
+??? info "Mods liés"
+    - :material-arrow-right: [Expanded Foods](cuisine.md#expanded-foods) : Viandes fumées et jerky dans les recettes
+    - :material-arrow-right: [Butchering](../faune/interactions/index.md#butchering) : Dépeçage avancé des prises
+    - :material-arrow-right: [Blood Trail](combat.md#blood-trail) : Pistage des animaux blessés
+    - :material-arrow-right: [Animal Cages](../faune/interactions/index.md#animal-cages) : Capture vivante au lieu de piéger
+    - :material-arrow-right: [Rivers](monde.md#rivers) : Pêche dans les cours d'eau améliorés
+    - :material-arrow-right: [Joy of Sailing](../qol/decoration.md#joy-of-sailing) : Radeau compatible pour navigation
 
 ---
 

@@ -5,7 +5,7 @@ description: Mods d'artisanat du modpack Wildborne
 
 # :hammer: Artisanat & Construction
 
-**6 mods** pour des possibilités de construction et d'artisanat étendues.
+**8 mods** pour des possibilités de construction et d'artisanat étendues.
 
 ---
 
@@ -14,11 +14,13 @@ description: Mods d'artisanat du modpack Wildborne
 | Mod | Version | Description |
 |-----|---------|-------------|
 | chiseltools | 1.15.6 | Outils de ciselage avancés pour sculptures détaillées |
-| chiseledblockretention | 2.0.1 | Les blocs ciselés conservent la chaleur |
+| cbr | 2.0.1 | Les blocs ciselés conservent la chaleur |
 | stonequarry | 3.5.1 | Carrière de pierre industrielle |
 | millwright | 1.3.1 | Moulins et mécanismes à eau/vent |
 | smithingplus | 1.8.3 | Forge améliorée avec nouvelles techniques |
 | toolsmith | 1.2.14 | Fabrication d'outils personnalisés |
+| claywheel | 1.1.7 | Tour de potier pour objets en argile |
+| stickisolation | 1.0.0 | Les couches de bâtons isolent vers le haut |
 
 ---
 
@@ -46,6 +48,11 @@ Transformez vos créations en objets utiles :
 - **Coffres**, lits, foyers, étagères sculptés
 - **Panneaux** et enseignes décoratives
 
+??? info "Mods liés"
+    - :material-arrow-right: [Chiseled Block Retention](#chiseled-block-retention) : Conservation de chaleur des blocs ciselés
+    - :material-arrow-right: [Real Smoke](../qol/qualite-de-vie.md#real-smoke) : Cheminées ciselées fonctionnelles
+    - :material-arrow-right: [Carry On](../qol/stockage.md#carry-on) : Transport des créations ciselées
+
 ---
 
 ## Chiseled Block Retention
@@ -55,6 +62,10 @@ Correction essentielle pour les constructeurs créatifs.
 - Les blocs ciselés **conservent la chaleur** comme les blocs pleins
 - Les pièces avec murs ciselés sont **valides** pour le système de température
 - Construisez des intérieurs décorés **sans sacrifier l'isolation**
+
+??? info "Mods liés"
+    - :material-alert: [Chisel Tools](#chisel-tools) : REQUIS pour créer des blocs ciselés
+    - :material-arrow-right: [Real Smoke](../qol/qualite-de-vie.md#real-smoke) : Compatibilité avec les cheminées décoratives
 
 ---
 
@@ -74,6 +85,13 @@ Fini le minage fastidieux de pierre. Établissez des carrières pour une product
 - Plus besoin de voyager vers les lacs pour le gravier boueux
 - Stockage dédié pour les matériaux de construction
 - Compatible avec les outils de différents niveaux
+
+??? info "Mods liés"
+    - :material-arrow-right: [CAN Jewelry](combat.md#can-jewelry) : Gemmes brutes récupérables
+    - :material-arrow-right: [MN Geology](monde.md#material-needs-geology) : Plus de types de pierres à extraire
+    - :material-arrow-right: [Chisel Tools](#chisel-tools) : Sculpter les pierres extraites
+
+---
 
 ## Millwright
 
@@ -96,6 +114,13 @@ Améliorez vos moulins bien au-delà des capacités vanilla pour une production 
 
 Combiné avec le mod **Rivers**, placez vos moulins sur les cours d'eau pour une énergie gratuite !
 
+??? info "Mods liés"
+    - :material-arrow-right: [Rivers](monde.md#rivers) : Moulins à eau sur cours d'eau naturels
+    - :material-arrow-right: [Pipeleaf](raccourcis.md#pipeleaf---tabac--pipes) : Broyage du tabac séché
+    - :material-arrow-right: [Expanded Foods](cuisine.md#expanded-foods) : Mouture des céréales pour recettes
+
+---
+
 ## Smithing Plus
 
 ![Smithing Plus](https://moddbcdn.vintagestory.at/smithingpluslogo2_1c117baa69dfb2d780b9fc68ed0b2cf6_480_320.png){ align=right width=100 }
@@ -112,6 +137,10 @@ Des améliorations de forge qui rendent le travail du métal plus flexible et r�
 - **Recherche de recettes** sur l'enclume
 - Affichage de la **température** de travail dans les infobulles
 - Informations détaillées dans le **manuel** pour chaque métal
+
+??? info "Mods liés"
+    - :material-arrow-right: [Toolsmith](#toolsmith) : Système d'outils modulaires compatible
+    - :material-arrow-right: [XSkills](competences.md) : Compétence de forgeron pour bonus
 
 ---
 
@@ -141,12 +170,49 @@ Les outils deviennent modulaires avec des composants interchangeables et un syst
 - Reforgez les **têtes endommagées** plutôt que de tout refaire
 - Chaque composant s'use **indépendamment**
 
+??? info "Mods liés"
+    - :material-arrow-right: [Smithing Plus](#smithing-plus) : Forge des têtes d'outils
+    - :material-arrow-right: [XSkills](competences.md) : Compétences artisanales
+
+---
+
+## Clay Wheel (Tour de Potier)
+
+Un tour de potier pour façonner l'argile plus rapidement et de manière immersive.
+
+### Utilisation
+1. Placez le tour de potier
+2. **Accroupissez-vous + clic droit** avec de l'argile pour choisir une recette
+3. Interagissez pour former l'objet progressivement
+
+Idéal pour la production de poteries, cruchons et récipients.
+
+??? info "Mods liés"
+    - :material-arrow-right: [A Culinary Artillery](cuisine.md#a-culinary-artillery) : Récipients pour la cuisine
+    - :material-arrow-right: [Hydrate or Diedrate](survie.md#hydrate-or-diedrate) : Cruchons pour stocker l'eau
+    - :material-arrow-right: [XSkills](competences.md) : Compétence de potier
+
+---
+
+## Stick Isolation
+
+Patch utilitaire pour la construction.
+
+- Les **couches de bâtons** deviennent solides vers le haut
+- Permet de **sceller une pièce** en les utilisant comme toit
+- Parfait pour créer des **cheminées** fonctionnelles
+- Simple mais très pratique pour l'isolation thermique
+
+??? info "Mods liés"
+    - :material-arrow-right: [Real Smoke](../qol/qualite-de-vie.md#real-smoke) : Évacuation de la fumée à travers le toit
+    - :material-arrow-right: [Chiseled Block Retention](#chiseled-block-retention) : Combine isolation et décoration
+
 ---
 
 ## Conseils
 
-!!! tip "Millwright + Rivers"
-    Le mod Rivers crée de vraies rivières. Placez vos moulins à eau dessus pour une énergie gratuite !
-
 !!! tip "Chisel Tools"
     Prenez le temps d'apprendre les contrôles du ciselage. Les possibilités décoratives sont infinies !
+
+!!! tip "Clay Wheel"
+    Le tour de potier est plus rapide que le façonnage à la main pour les objets courants.

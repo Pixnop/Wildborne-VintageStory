@@ -5,7 +5,7 @@ description: Bibliothèques techniques du modpack Wildborne
 
 # :books: Bibliothèques & Dépendances
 
-**7 mods** techniques nécessaires au fonctionnement des autres mods.
+**10 mods** techniques nécessaires au fonctionnement des autres mods.
 
 ---
 
@@ -21,10 +21,13 @@ description: Bibliothèques techniques du modpack Wildborne
 | attributerenderinglibrary | 2.4.0 | Affichage d'attributs |
 | commonlib | 2.8.0 | Base commune pour plusieurs mods |
 | configlib | 1.10.12 | Gestion de configuration |
-| overhaullib | 1.15.8 | Mods de type "overhaul" |
+| overhaullib | 1.16.0 | Mods de type "overhaul" |
 | vsimgui | 1.1.16 | Interfaces graphiques |
 | xlib | 0.9.0-pre.2 | Système XSkills |
 | em | 3.4.0 | Expanded Matter |
+| bettertranslations | 0.0.35 | Traductions communautaires |
+| vsinstrumentsbase | 2.0.6 | Base instruments de musique |
+| vsinstruments_quackpack | 1.0.2 | Pack d'instruments |
 
 ---
 
@@ -32,6 +35,10 @@ description: Bibliothèques techniques du modpack Wildborne
 
 ### Common Lib
 Bibliothèque fondamentale pour PlayerCorpse, Stone Quarry, et d'autres mods.
+
+??? info "Requis par"
+    - :material-alert: [Player Corpse](qualite-de-vie.md#player-corpse) : Système de corps récupérable
+    - :material-alert: [Stone Quarry](../gameplay/artisanat.md#stone-quarry) : Système de carrière
 
 **Commandes utilitaires :**
 
@@ -63,12 +70,19 @@ Support pour les mods de refonte :
 - Combat Overhaul
 - Autres refontes majeures
 
+??? info "Requis par"
+    - :material-alert: [Combat Overhaul](../gameplay/combat.md#combat-overhaul) : Refonte du système de combat
+
 ### XLib
 Bibliothèque pour le système de compétences :
 
 - XSkills
 - XSkills Gilded
 - Progression et perks
+
+??? info "Requis par"
+    - :material-alert: [XSkills](../gameplay/competences.md#xskills) : Système de compétences principal
+    - :material-alert: [XSkills Gilded](../gameplay/competences.md#xskills-gilded) : Compétences dorées avancées
 
 ### Expanded Matter (EM)
 
@@ -92,6 +106,22 @@ Interface graphique avancée :
 - Menus personnalisés
 - Fenêtres de configuration
 - HUD modifié
+
+### Better Translations
+
+Traductions communautaires pour de nombreux mods.
+
+- Récupère les traductions du **projet Crowdin**
+- Améliore la localisation des mods en **français** et autres langues
+- Mise à jour automatique des chaînes traduites
+
+### VS Instruments
+
+Base et pack d'instruments de musique pour le jeu.
+
+- **vsinstrumentsbase** : Framework pour les instruments
+- **vsinstruments_quackpack** : Collection d'instruments jouables
+- Ajoutez de la musique à vos soirées au coin du feu !
 
 ---
 

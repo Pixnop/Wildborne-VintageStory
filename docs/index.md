@@ -9,7 +9,7 @@ description: Wiki officiel du modpack Wildborne pour Vintage Story
 
 **Le modpack ultime pour Vintage Story**
 
-Explorez un monde enrichi par 97 mods soigneusement sélectionnés pour une expérience de survie immersive et authentique.
+Explorez un monde enrichi par 120 mods soigneusement sélectionnés pour une expérience de survie immersive et authentique.
 
 [:material-download: Télécharger](download.md){ .md-button .md-button--primary }
 [Commencer l'exploration](#categories){ .md-button }
@@ -23,7 +23,7 @@ Explorez un monde enrichi par 97 mods soigneusement sélectionnés pour une exp�
 <div class="stats-grid" markdown>
 
 <div class="stat-card" markdown>
-<span class="number">97</span>
+<span class="number">120</span>
 <span class="label">Mods installés</span>
 </div>
 
@@ -33,7 +33,7 @@ Explorez un monde enrichi par 97 mods soigneusement sélectionnés pour une exp�
 </div>
 
 <div class="stat-card" markdown>
-<span class="number">12</span>
+<span class="number">14</span>
 <span class="label">Mods de flore</span>
 </div>
 
@@ -62,7 +62,7 @@ Découvrez une faune diversifiée : mammifères, oiseaux, reptiles et créatures
 
 <div class="category-card" markdown>
 
-### :herb: Flore <span class="count">12 mods</span>
+### :herb: Flore <span class="count">14 mods</span>
 
 7 régions florales uniques et des dizaines de nouvelles plantes, arbres fruitiers et champignons à découvrir.
 
@@ -72,7 +72,7 @@ Découvrez une faune diversifiée : mammifères, oiseaux, reptiles et créatures
 
 <div class="category-card" markdown>
 
-### :crossed_swords: Gameplay <span class="count">26 mods</span>
+### :crossed_swords: Gameplay <span class="count">40 mods</span>
 
 Combat refait, cuisine élaborée, compétences, artisanat avancé et génération de monde améliorée.
 
@@ -82,7 +82,7 @@ Combat refait, cuisine élaborée, compétences, artisanat avancé et générati
 
 <div class="category-card" markdown>
 
-### :sparkles: QoL & Divers <span class="count">30 mods</span>
+### :sparkles: QoL & Divers <span class="count">40 mods</span>
 
 Stockage intelligent, décorations, qualité de vie et les bibliothèques techniques.
 

@@ -1,11 +1,11 @@
 ---
 title: Flore
-description: Tous les mods de flore du modpack Wildborne - 12 mods de plantes et végétation
+description: Tous les mods de flore du modpack Wildborne - 14 mods de plantes et végétation
 ---
 
 # :herb: Flore & Botanique
 
-Le modpack Wildborne enrichit la végétation avec **12 mods** ajoutant des régions florales uniques et de nouvelles plantes.
+Le modpack Wildborne enrichit la végétation avec **14 mods** ajoutant des régions florales uniques et de nouvelles plantes.
 
 ---
 
@@ -14,7 +14,7 @@ Le modpack Wildborne enrichit la végétation avec **12 mods** ajoutant des rég
 | Catégorie | Nombre de mods | Description |
 |-----------|----------------|-------------|
 | Zones Florales | 7 | Régions biogéographiques uniques |
-| Plantes & Arbres | 5 | Fruits, arbres, champignons |
+| Plantes & Arbres | 7 | Fruits, arbres, champignons, fleurs |
 
 ---
 
@@ -68,17 +68,21 @@ Ces mods ajoutent de nouvelles plantes, arbres et champignons collectables.
 | wildfarmingrevival | 1.4.2 | Agriculture sauvage et cultures | [:octicons-arrow-right-24:](plantes/wildfarmingrevival.md) |
 | herbarium | 1.4.1-rc.1 | Collection et classification de plantes | [:octicons-arrow-right-24:](plantes/herbarium.md) |
 | mycodiversity | 1.0.4 | Diversité des champignons | [:octicons-arrow-right-24:](plantes/mycodiversity.md) |
+| apegrapes | 1.3.1 | Vignes et raisins pour vinification | - |
+| mnflowers | 0.0.0 | 28 nouvelles variétés de fleurs | - |
 
 ---
 
-## Synergies avec la Cuisine
+## Synergies avec les autres mods
 
-!!! info "Intégration culinaire"
-    Les nouvelles plantes et fruits s'intègrent parfaitement avec les mods de cuisine :
+??? info "Cuisine & Alimentation"
+    - :material-arrow-right: [Wildcraft Fruit](plantes/wildcraftfruit.md) + [Expanded Foods](../gameplay/cuisine.md#expanded-foods) = nouvelles recettes de desserts
+    - :material-arrow-right: [Herbarium](plantes/herbarium.md) + [Alchemy](../qol/qualite-de-vie.md#alchemy) = potions et remèdes
+    - :material-arrow-right: [Mycodiversity](plantes/mycodiversity.md) + [A Culinary Artillery](../gameplay/cuisine.md#a-culinary-artillery) = plats aux champignons
 
-    - **Wildcraft Fruit** + **Expanded Foods** = nouvelles recettes de desserts
-    - **Herbarium** + **Alchemy** = potions et remèdes
-    - **Mycodiversity** + **A Culinary Artillery** = plats aux champignons
+??? info "Agriculture & Production"
+    - :material-arrow-right: [Wildcraft Tree](plantes/wildcrafttree.md) + [Millwright](../gameplay/artisanat.md#millwright) = bois variés pour constructions
+    - :material-arrow-right: Floral Zones + [Terra Prety](../gameplay/monde.md#terra-prety) = végétation adaptée aux biomes
 
 ---
 

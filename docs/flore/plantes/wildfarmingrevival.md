@@ -85,7 +85,6 @@ tags:
     Ces cultures s'intègrent avec :
     - **Expanded Foods** - nouvelles recettes
     - **A Culinary Artillery** - préparations avancées
-    - **From Golden Combs** - association avec l'apiculture
 
 ---
 

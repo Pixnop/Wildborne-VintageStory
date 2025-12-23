@@ -47,6 +47,10 @@ Compatible avec plus de **45 mods** de faune :
 - More Animals
 - Et tous les mods du modpack !
 
+??? info "Mods liés"
+    - :material-arrow-right: [Carry On](../../qol/stockage.md#carry-on) : Transport des cages remplies
+    - :material-arrow-right: [Butchering](#butchering) : Dépeçage des animaux capturés
+
 ---
 
 ## Butchering
@@ -78,6 +82,12 @@ Transforme le dépeçage en véritable processus de boucherie, récompensant la 
 !!! info "Portage"
     Les carcasses occupent l'inventaire et **ralentissent** vos mouvements. Utilisez le sac de boucher pour plus de capacité.
 
+??? info "Mods liés"
+    - :material-arrow-right: [Expanded Foods](../../gameplay/cuisine.md#expanded-foods) : Recettes avec sang et abats
+    - :material-arrow-right: [Primitive Survival](../../gameplay/survie.md#primitive-survival) : Viandes fumées
+    - :material-arrow-right: [Tailor's Delight](../../qol/decoration.md#tailors-delight) : Cuir et peaux
+    - :material-arrow-right: [Blood Trail](../../gameplay/combat.md#blood-trail) : Pistage avant dépeçage
+
 ---
 
 ## Pet AI
@@ -100,6 +110,10 @@ Bibliothèque d'IA et de mécaniques d'apprivoisement pour les animaux de compag
 - **Résurrection** des compagnons tombés au combat (avec cataplasme)
 - **Reproduction** des animaux apprivoisés (optionnel)
 - Compatible **multijoueur** avec options PvP
+
+??? info "Mods liés"
+    - :material-arrow-right: [Wolf Taming](#wolf-taming) : Apprivoisement des loups
+    - :material-arrow-right: [Cats](../mammiferes/cats.md) : Chats domestiques IA
 
 ---
 
@@ -127,6 +141,10 @@ Apprivoisez les loups et obtenez des chiens de différentes races auprès des ma
 - Utilisez les **commandes** : assis, reste, chasse
 - Consultez le **manuel** du jeu pour le guide complet
 
+??? info "Mods liés"
+    - :material-alert: [Pet AI](#pet-ai) : REQUIS pour l'IA des compagnons
+    - :material-arrow-right: [Caninae](../mammiferes/caninae.md) : Plus de canidés à apprivoiser
+
 ---
 
 ## Shear Lib
@@ -146,12 +164,6 @@ Bibliothèque technique ajoutant un comportement "tondable" aux entités.
 - Quantités min/max personnalisables
 - S'utilise avec le mod **Wool & More** pour la laine
 
----
-
-## Synergies
-
-!!! info "Combinaisons recommandées"
-    - **Animal Cages** + **tous les mods de faune** = capture de nouvelles espèces
-    - **Wolf Taming** + **Pet AI** = loups compagnons intelligents
-    - **Butchering** + **faune** = ressources diversifiées
-    - **Shear Lib** + **Wool** = tonte des moutons et autres
+??? info "Mods liés"
+    - :material-arrow-right: [Wool](../../qol/decoration.md#wool--more) : Production de laine à partir de la tonte
+    - :material-arrow-right: [Bovinae](../mammiferes/bovinae.md) : Moutons et autres tondables

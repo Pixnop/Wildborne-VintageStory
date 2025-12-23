@@ -5,7 +5,7 @@ description: Mods de cuisine du modpack Wildborne
 
 # :cook: Cuisine & Alimentation
 
-**8 mods** pour transformer votre expérience culinaire dans Vintage Story.
+**9 mods** pour transformer votre expérience culinaire dans Vintage Story.
 
 ---
 
@@ -16,11 +16,12 @@ description: Mods de cuisine du modpack Wildborne
 | aculinaryartillery | 2.0.0-dev.11 | Arsenal culinaire avancé - nouveaux ustensiles et recettes complexes |
 | expandedfoods | 2.0.0-dev.6 | Extension massive du catalogue d'aliments |
 | diversediets | 1.0.3 | Bonus pour régimes alimentaires variés |
-| fromgoldencombs | 1.9.4 | Apiculture complète : ruches, miel, cire |
 | metalpots | 1.6.3 | Casseroles en métal pour cuisson avancée |
 | stonebakeoven | 1.2.0 | Four en pierre pour pains et pâtisseries |
 | betterfirepit | 1.2.0 | Foyer amélioré avec plus d'options de cuisson |
 | pipeleaf | 2.4.1 | Culture de tabac et fabrication de pipes |
+| composter | 1.2.2 | Composteur pour décomposer rapidement la nourriture |
+| scarecrow | 1.7.1 | Épouvantails pour protéger vos cultures |
 
 ---
 
@@ -45,6 +46,12 @@ La base technique de la cuisine avancée dans Wildborne. Ce mod fournit tous les
 - **Mijoter** pour sirops et confitures
 - **Presser** fruits et légumes
 
+??? info "Mods liés"
+    - :material-arrow-right: [Expanded Foods](#expanded-foods) : Requiert ACulinary pour fonctionner
+    - :material-arrow-right: [Carry On](../qol/stockage.md#carry-on) : Compatible avec les ustensiles
+    - :material-arrow-right: [Wildcraft Trees](../flore/index.md) : Bois compatibles pour les ustensiles
+    - :material-arrow-right: [XSkills](competences.md) : Bonus de qualité avec compétence Cuisine
+
 ---
 
 ## Expanded Foods
@@ -66,28 +73,34 @@ Une extension massive qui multiplie les possibilités culinaires. Préparez des 
 - Production de **sel** à partir d'eau de mer
 - Préparation de **repas de gibier** avec la viande des mods de faune
 
+??? info "Mods liés"
+    - :material-alert: [A Culinary Artillery](#a-culinary-artillery) : REQUIS pour fonctionner
+    - :material-arrow-right: [Primitive Survival](survie.md#primitive-survival) : Viandes fumées compatibles
+    - :material-arrow-right: [Wildcraft Fruits](../flore/index.md) : Fruits et noix pour recettes
+    - :material-arrow-right: [Hydrate or Diedrate](survie.md#hydrate-or-diedrate) : Boissons hydratantes
+    - :material-arrow-right: [Butchering](../faune/interactions/index.md#butchering) : Viandes de qualité pour recettes
+
 ---
 
-## From Golden Combs
+## Agriculture & Jardinage
 
-![From Golden Combs](https://moddbcdn.vintagestory.at/FGC_ExternalLogo_dc9fc65b0c96a7ae910b328faca448e3.png){ align=right width=120 }
+### Composter
 
-L'apiculture devient un métier à part entière avec trois types de ruches et un système de pollinisation qui booste vos cultures.
+Un conteneur qui décompose la nourriture **extrêmement rapidement**.
 
-### Types de ruches
-| Type | Caractéristiques |
-|------|------------------|
-| Skep | Ruches de base en paille tressée |
-| Céramique | Décoratives, disponibles en plusieurs couleurs |
-| Langstroth | Industrielles, empilables jusqu'à 6 niveaux |
+- Transformez vos restes de nourriture en **compost**
+- Beaucoup plus rapide que la décomposition naturelle
+- Utile pour recycler les aliments périmés
+- Le compost enrichit vos terres agricoles
 
-### Bonus de pollinisation
-Les ruches actives augmentent le rendement des cultures proches de **25%** dans une zone de 11x11 à 17x17 blocs selon le type.
+### Scarecrow (Épouvantail)
 
-### Produits
-- Miel en pots réutilisables
-- Cire pour bougies
-- Hydromel et boissons fermentées
+Protégez vos cultures des animaux nuisibles.
+
+- Empêche les **lièvres** et **ratons laveurs** de ravager votre jardin
+- Crafté avec : chapeau de paille + citrouille + mannequin de paille
+- Zone de protection autour de l'épouvantail
+- Solution simple et efficace pour l'agriculture
 
 ---
 
@@ -98,3 +111,6 @@ Les ruches actives augmentent le rendement des cultures proches de **25%** dans 
 
 !!! tip "Progression culinaire"
     Commencez avec le **Better Firepit**, puis passez au **Stone Bake Oven**, et enfin aux **Metal Pots** pour des recettes avancées.
+
+!!! tip "Protection des cultures"
+    Placez un épouvantail au centre de votre jardin et utilisez le compost pour améliorer le rendement de vos cultures.

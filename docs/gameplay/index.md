@@ -5,7 +5,7 @@ description: Mods de gameplay du modpack Wildborne - Combat, cuisine, compétenc
 
 # :crossed_swords: Gameplay
 
-Cette section couvre les **27 mods** qui modifient les mécaniques de jeu : combat, cuisine, compétences, artisanat, survie et génération du monde.
+Cette section couvre les **24 mods** qui modifient les mécaniques de jeu : combat, cuisine, compétences, artisanat, survie et génération du monde.
 
 ---
 
@@ -27,7 +27,7 @@ Toutes les touches et commandes importantes des mods.
 <div class="category-card" markdown>
 
 ### :cook: Cuisine
-**8 mods**
+**7 mods**
 
 Système culinaire complet avec nouveaux aliments, ustensiles et recettes.
 
@@ -38,7 +38,7 @@ Système culinaire complet avec nouveaux aliments, ustensiles et recettes.
 <div class="category-card" markdown>
 
 ### :crossed_swords: Combat
-**7 mods**
+**6 mods**
 
 Refonte complète du combat avec nouvelles armes et mécaniques.
 
@@ -82,7 +82,7 @@ Mécaniques de survie réalistes.
 <div class="category-card" markdown>
 
 ### :world_map: Monde
-**4 mods**
+**3 mods**
 
 Génération du monde et structures.
 
@@ -103,13 +103,12 @@ Génération du monde et structures.
 | aculinaryartillery | 2.0.0-dev.11 | Arsenal culinaire avancé |
 | expandedfoods | 2.0.0-dev.6 | Aliments étendus |
 | diversediets | 1.0.3 | Régimes alimentaires variés |
-| fromgoldencombs | 1.9.4 | Apiculture et miel |
 | metalpots | 1.6.3 | Casseroles en métal |
 | stonebakeoven | 1.2.0 | Four en pierre |
 | betterfirepit | 1.2.0 | Foyer amélioré |
 | pipeleaf | 2.4.1 | Tabac et pipes |
 
-### Combat & Armes (7 mods)
+### Combat & Armes (6 mods)
 
 | Mod | Version | Description |
 |-----|---------|-------------|
@@ -117,7 +116,6 @@ Génération du monde et structures.
 | armory | 1.6.2 | Arsenal d'armes |
 | maltiezcrossbows | 1.6.8 | Arbalètes |
 | maltiezfirearms | 1.5.4 | Armes à feu |
-| bullseyecontinued | 3.4.5 | Amélioration du tir à l'arc |
 | cooperativecombatrework | 1.0.0 | Combat coopératif |
 | coopsynergy | 0.1.0 | Synergies coop |
 
@@ -148,13 +146,12 @@ Génération du monde et structures.
 | hydrateordiedrate | 2.3.4 | Système d'hydratation |
 | primitivesurvival | 4.0.2 | Survie primitive |
 
-### Monde & Génération (4 mods)
+### Monde & Génération (3 mods)
 
 | Mod | Version | Description |
 |-----|---------|-------------|
 | betterruins | 0.5.4 | Ruines améliorées |
 | rivers | 4.7.3 | Système de rivières |
-| plainsandvalleys | 1.0.12 | Plaines et vallées |
 | bettertraders | 0.1.0 | Marchands améliorés |
 
 ---

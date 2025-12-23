@@ -102,7 +102,7 @@ Les arbres peuvent être :
 ## Conseils
 
 !!! tip "If"
-    Le bois d'if est excellent pour les arcs (avec Bullseye). Mais attention, les baies sont toxiques !
+    Le bois d'if est excellent pour les arcs. Mais attention, les baies sont toxiques !
 
 !!! tip "Cèdre"
     Les coffres en cèdre protègent mieux la nourriture grâce à ses propriétés répulsives naturelles.

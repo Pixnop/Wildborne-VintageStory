@@ -5,7 +5,7 @@ description: Mods de stockage du modpack Wildborne
 
 # :package: Stockage & Organisation
 
-**7 mods** pour mieux organiser vos ressources et votre base.
+**8 mods** pour mieux organiser vos ressources et votre base.
 
 ---
 
@@ -20,6 +20,7 @@ description: Mods de stockage du modpack Wildborne
 | morepiles | 2.2.0 | Empiler plus de ressources au sol |
 | purposefulstorage | 1.5.1 | Conteneurs spécialisés |
 | tankardsandgoblets | 1.3.4 | Rangement de boissons |
+| storageoptions | 2.0.0 | Râteliers d'armes et étagères simples |
 
 ---
 
@@ -45,6 +46,11 @@ Ramassez et transportez des blocs entiers, **conteneurs pleins inclus**.
 !!! warning "Pénalités"
     Porter ralentit vos mouvements et empêche de courir. Les dégâts font tomber l'objet !
 
+??? info "Mods liés"
+    - :material-arrow-right: [A Culinary Artillery](../gameplay/cuisine.md#a-culinary-artillery) : Transport des ustensiles de cuisine
+    - :material-arrow-right: [Animal Cages](../faune/interactions/index.md#animal-cages) : Transport des cages pleines
+    - :material-arrow-right: [Chisel Tools](../gameplay/artisanat.md#chisel-tools) : Transport des blocs ciselés
+
 ---
 
 ## Sortable Storage
@@ -63,6 +69,10 @@ Transformez vos conteneurs vanilla en versions **triables automatiquement**.
 - **Fusion automatique** des piles similaires
 - Compatible avec Carry On et autres mods de stockage
 
+??? info "Mods liés"
+    - :material-arrow-right: [Carry On](#carry-on) : Déplacement des coffres triables
+    - :material-arrow-right: [Food Shelves](#food-shelves) : Étagères de nourriture triables
+
 ---
 
 ## Food Shelves
@@ -76,6 +86,10 @@ Transformez vos conteneurs vanilla en versions **triables automatiquement**.
 - **Accès rapide** sans ouvrir d'interface
 - Design rustique authentique
 
+??? info "Mods liés"
+    - :material-arrow-right: [Expanded Foods](../gameplay/cuisine.md#expanded-foods) : Affichage des nouveaux aliments
+    - :material-arrow-right: [A Culinary Artillery](../gameplay/cuisine.md#a-culinary-artillery) : Stockage des ingrédients de cuisine
+
 ---
 
 ## More Piles
@@ -88,6 +102,26 @@ Stockez plus de ressources directement au sol de manière esthétique.
 - **Piles plus grandes** que vanilla
 - **Aspect décoratif** pour vos ateliers
 - Organisation visuelle de vos ressources
+
+??? info "Mods liés"
+    - :material-arrow-right: [Stone Quarry](../gameplay/artisanat.md#stone-quarry) : Stockage des matériaux de construction
+    - :material-arrow-right: [Smithing Plus](../gameplay/artisanat.md#smithing-plus) : Piles de fragments métalliques
+    - :material-arrow-right: [Material Needs](../gameplay/monde.md#material-needs) : Plus de variantes empilables
+
+---
+
+## Storage Options
+
+Conteneurs supplémentaires pour organiser votre équipement.
+
+- **Râtelier d'armes** avec 4 emplacements
+- **Étagère simple** avec 1 emplacement
+- Affichage visuel des objets stockés
+- Nécessite Attribute Rendering Library
+
+??? info "Mods liés"
+    - :material-alert: [Attribute Rendering Lib](bibliotheques.md) : REQUIS pour fonctionner
+    - :material-arrow-right: [Combat Overhaul](../gameplay/combat.md#combat-overhaul) : Rangement des équipements de combat
 
 ---
 

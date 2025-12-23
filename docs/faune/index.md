@@ -86,6 +86,14 @@ Ces mods ajoutent des mécaniques d'interaction avec la faune.
 | wolftaming | 4.1.4 | Système complet d'apprivoisement des loups |
 | shearlib | 1.2.0 | Bibliothèque pour la tonte des animaux |
 
+??? info "Synergies Faune"
+    - :material-arrow-right: [Carry On](../qol/stockage.md#carry-on) : Transport des cages avec animaux
+    - :material-arrow-right: [Expanded Foods](../gameplay/cuisine.md#expanded-foods) : Recettes avec viandes des nouveaux animaux
+    - :material-arrow-right: [Primitive Survival](../gameplay/survie.md#primitive-survival) : Pièges pour les petits animaux
+    - :material-arrow-right: [Blood Trail](../gameplay/combat.md#blood-trail) : Pistage des animaux blessés
+    - :material-arrow-right: [Wool](../qol/decoration.md#wool--more) : Tonte des animaux laineux
+    - :material-arrow-right: [Tailor's Delight](../qol/decoration.md#tailors-delight) : Cuir des animaux abattus
+
 [:octicons-arrow-right-24: Voir le guide des interactions](interactions/index.md)
 
 ---

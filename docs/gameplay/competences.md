@@ -39,6 +39,13 @@ Chaque action vous fait progresser. L'expérience accumulée se convertit en poi
 ### Système de qualité
 Les outils et équipements craftés peuvent avoir une **qualité variable** affectant leur durabilité et efficacité. Plus votre compétence est haute, meilleure sera la qualité.
 
+??? info "Mods liés"
+    - :material-arrow-right: [Combat Overhaul](combat.md#combat-overhaul) : Compétences Swordsman, Spearman, Archer
+    - :material-arrow-right: [A Culinary Artillery](cuisine.md#a-culinary-artillery) : Compétence Cuisine améliorée
+    - :material-arrow-right: [Butchering](../faune/interactions/index.md#butchering) : Compétence de dépeçage
+    - :material-arrow-right: [Toolsmith](artisanat.md#toolsmith) : Qualité des outils selon compétence
+    - :material-arrow-right: [XSkills Gilded](#xskills-gilded) : Progression au-delà niveau 100
+
 ---
 
 ## XSkills Gilded
@@ -51,6 +58,10 @@ Pour les joueurs vétérans cherchant à transcender les limites.
 - **Aptitudes ultimes** dévastatrices
 - **Bonus de maître** permanents
 - Progression pour les parties longues
+
+??? info "Mods liés"
+    - :material-alert: [XSkills](#xskills) : REQUIS comme base
+    - :material-arrow-right: [The Working Classes](#the-working-classes) : Classes avec bonus XSkills
 
 ---
 
@@ -70,6 +81,11 @@ Vos actions façonnent votre personnage avec des traits permanents.
 
 Attention : certains comportements peuvent aussi donner des traits **négatifs** !
 
+??? info "Mods liés"
+    - :material-arrow-right: [Diverse Diets](cuisine.md) : Traits alimentaires
+    - :material-arrow-right: [Combat Overhaul](combat.md#combat-overhaul) : Traits de combat
+    - :material-arrow-right: [XSkills](#xskills) : Traits bonus selon compétences
+
 ---
 
 ## The Working Classes
@@ -85,6 +101,11 @@ Choisissez un métier pour des bonus spécialisés dès le départ.
 | Chasseur | +25% dégâts aux animaux sauvages |
 | Mineur | +10% chance de minerai bonus |
 | Artisan | Crafts de meilleure qualité |
+
+??? info "Mods liés"
+    - :material-arrow-right: [XSkills](#xskills) : Progression des compétences par classe
+    - :material-arrow-right: [Combat Overhaul](combat.md#combat-overhaul) : `.charsel` pour changer de classe
+    - :material-arrow-right: [Trait Acquirer](#trait-acquirer) : Traits selon la classe choisie
 
 ---
 
