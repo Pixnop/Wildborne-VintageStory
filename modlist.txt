@@ -83,6 +83,7 @@ fahussar
 falandsknecht
 fatemplar
 faviking
+favarangian
 canjewelry
 
 # Compétences & Progression
