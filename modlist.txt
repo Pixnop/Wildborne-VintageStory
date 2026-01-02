@@ -139,6 +139,7 @@ farseer
 walkingstick
 pelaguswinds
 realsmoke
+cbr
 
 # Décoration
 apelanterns
