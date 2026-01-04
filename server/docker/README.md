@@ -125,7 +125,9 @@ docker compose up -d
 2. Supprimez le dossier `server/`
 3. Relancez `./setup.sh`
 
-## Ports
+## Ports et Redirection
+
+### Pare-feu local
 
 Ouvrez le port **42420** (TCP et UDP) dans votre pare-feu.
 
@@ -139,6 +141,52 @@ sudo firewall-cmd --permanent --add-port=42420/tcp
 sudo firewall-cmd --permanent --add-port=42420/udp
 sudo firewall-cmd --reload
 ```
+
+```powershell
+# Windows (PowerShell en admin)
+New-NetFirewallRule -DisplayName "Vintage Story Server" -Direction Inbound -Protocol TCP -LocalPort 42420 -Action Allow
+New-NetFirewallRule -DisplayName "Vintage Story Server" -Direction Inbound -Protocol UDP -LocalPort 42420 -Action Allow
+```
+
+### Redirection de ports (Router/Box)
+
+Pour héberger depuis chez vous, configurez la redirection de ports sur votre routeur/box :
+
+1. **Accédez à l'interface de votre box** :
+   - Freebox : http://mafreebox.freebox.fr
+   - Livebox : http://192.168.1.1
+   - SFR Box : http://192.168.1.1
+   - Bbox : http://192.168.1.254
+
+2. **Trouvez la section** : "Redirection de ports" / "NAT" / "Port Forwarding"
+
+3. **Ajoutez deux règles** :
+
+   | Protocole | Port externe | Port interne | IP destination |
+   |-----------|--------------|--------------|----------------|
+   | TCP | 42420 | 42420 | IP de votre serveur |
+   | UDP | 42420 | 42420 | IP de votre serveur |
+
+4. **Trouvez l'IP locale de votre serveur** :
+   ```bash
+   # Linux
+   ip addr show | grep "inet "
+
+   # Windows
+   ipconfig
+   ```
+
+5. **Partagez votre IP publique** aux joueurs :
+   - Allez sur https://www.whatismyip.com/
+   - Ou utilisez : `curl ifconfig.me`
+
+### Hébergement Cloud (VPS)
+
+Si vous utilisez un VPS (OVH, Scaleway, DigitalOcean, etc.), ouvrez le port dans le panel de sécurité :
+
+- **OVH** : Firewall Network → Ajouter règle → Port 42420 TCP/UDP
+- **Scaleway** : Security Groups → Ajouter règle entrante
+- **DigitalOcean** : Networking → Firewalls → Ajouter règle
 
 ## Dépannage
 
