@@ -1,0 +1,11 @@
+{
+    "type": "content",
+    "modid": "wildborne",
+    "name": "Wildborne",
+    "version": "1.0.0",
+    "authors": ["Wildborne Team"],
+    "description": "Manuel officiel du modpack Wildborne - Guides in-game pour tous les mods inclus",
+    "side": "universal",
+    "requiredOnClient": true,
+    "requiredOnServer": false
+}

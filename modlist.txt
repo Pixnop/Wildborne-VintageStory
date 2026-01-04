@@ -83,6 +83,7 @@ fahussar
 falandsknecht
 fatemplar
 faviking
+favarangian
 canjewelry
 
 # Compétences & Progression
@@ -139,6 +140,7 @@ farseer
 walkingstick
 pelaguswinds
 realsmoke
+cbr
 
 # Décoration
 apelanterns
@@ -148,7 +150,6 @@ bettertraders
 
 # Bibliothèques
 attributerenderinglibrary
-cbr
 commonlib
 configlib
 overhaullib

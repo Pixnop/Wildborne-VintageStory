@@ -1,0 +1,27 @@
+# WildBorne Server - Docker Compose
+# Modpack: 121 mods - Vintage Story 1.21.6
+# https://github.com/Pixnop/Wildborne-VintageStory
+
+services:
+  vintagestory:
+    image: mcr.microsoft.com/dotnet/runtime:8.0
+    container_name: wildborne-server
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    ports:
+      - "42420:42420/tcp"
+      - "42420:42420/udp"
+    volumes:
+      # Fichiers serveur (lecture seule)
+      - ./server:/var/vintagestory/server:ro
+      # Donnees persistantes (mods, saves, config)
+      - ./data:/var/vintagestory/data
+    command: ["dotnet", "/var/vintagestory/server/VintagestoryServer.dll", "--dataPath", "/var/vintagestory/data"]
+    # Limites de ressources (ajuster selon votre serveur)
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+        reservations:
+          memory: 4G
