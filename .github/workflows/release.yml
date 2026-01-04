@@ -36,6 +36,12 @@ jobs:
       - name: Download mods from API
         run: python scripts/download_mods.py ${{ inputs.game_version }}
 
+      - name: Build Wildborne Handbook mod
+        run: |
+          cd mod
+          zip -r ../mods/wildborne-handbook_1.0.0.zip modinfo.json assets/
+          echo "✓ Built wildborne-handbook_1.0.0.zip"
+
       - name: Create mods archive
         run: |
           cd mods
