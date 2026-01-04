@@ -150,7 +150,6 @@ bettertraders
 
 # Bibliothèques
 attributerenderinglibrary
-cbr
 commonlib
 configlib
 overhaullib
