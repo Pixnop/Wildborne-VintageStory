@@ -5,7 +5,7 @@ description: Mods de cuisine du modpack Wildborne
 
 # :cook: Cuisine & Alimentation
 
-**9 mods** pour transformer votre expérience culinaire dans Vintage Story.
+**10 mods** pour transformer votre expérience culinaire dans Vintage Story.
 
 ---
 
@@ -22,6 +22,7 @@ description: Mods de cuisine du modpack Wildborne
 | pipeleaf | 2.4.1 | Culture de tabac et fabrication de pipes |
 | composter | 1.2.2 | Composteur pour décomposer rapidement la nourriture |
 | scarecrow | 1.7.1 | Épouvantails pour protéger vos cultures |
+| manualdishes | 0.1.1 | Nettoyage immersif des plats |
 
 ---
 
@@ -101,6 +102,23 @@ Protégez vos cultures des animaux nuisibles.
 - Crafté avec : chapeau de paille + citrouille + mannequin de paille
 - Zone de protection autour de l'épouvantail
 - Solution simple et efficace pour l'agriculture
+
+---
+
+## Manual Dishes
+
+Approche immersive pour le nettoyage de la vaisselle.
+
+### Fonctionnement
+- **Videz** les bols et marmites sans les lâcher au sol
+- **Nettoyez** la vaisselle en la lavant sur des tonneaux, seaux ou directement dans l'eau
+- Plus besoin d'attendre que la vaisselle se nettoie automatiquement
+
+Fait partie de la série **Manual mods** par SaltyWater pour un gameplay plus immersif.
+
+??? info "Mods liés"
+    - :material-arrow-right: [A Culinary Artillery](#a-culinary-artillery) : Bols et ustensiles compatibles
+    - :material-arrow-right: [Metal Pots](#metal-pots) : Casseroles à nettoyer
 
 ---
 

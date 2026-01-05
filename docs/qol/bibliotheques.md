@@ -5,7 +5,7 @@ description: Bibliothèques techniques du modpack Wildborne
 
 # :books: Bibliothèques & Dépendances
 
-**10 mods** techniques nécessaires au fonctionnement des autres mods.
+**12 mods** techniques nécessaires au fonctionnement des autres mods.
 
 ---
 
@@ -18,16 +18,18 @@ description: Bibliothèques techniques du modpack Wildborne
 
 | Mod | Version | Utilisé par |
 |-----|---------|-------------|
-| attributerenderinglibrary | 2.4.0 | Affichage d'attributs |
+| attributerenderinglibrary | 2.4.2 | Affichage d'attributs |
 | commonlib | 2.8.0 | Base commune pour plusieurs mods |
 | configlib | 1.10.12 | Gestion de configuration |
-| overhaullib | 1.16.0 | Mods de type "overhaul" |
+| overhaullib | 1.18.2 | Mods de type "overhaul" |
 | vsimgui | 1.1.16 | Interfaces graphiques |
 | xlib | 0.9.0-pre.2 | Système XSkills |
-| em | 3.4.0 | Expanded Matter |
+| em | 3.4.1 | Expanded Matter |
 | bettertranslations | 0.0.35 | Traductions communautaires |
 | vsinstrumentsbase | 2.0.6 | Base instruments de musique |
 | vsinstruments_quackpack | 1.0.2 | Pack d'instruments |
+| insanitylib | 1.1.0 | Utilitaires pour modding |
+| nemi | 1.1.0 | Icônes de waypoint supplémentaires |
 
 ---
 
@@ -122,6 +124,37 @@ Base et pack d'instruments de musique pour le jeu.
 - **vsinstrumentsbase** : Framework pour les instruments
 - **vsinstruments_quackpack** : Collection d'instruments jouables
 - Ajoutez de la musique à vos soirées au coin du feu !
+
+### Insanity Lib
+
+Bibliothèque d'utilitaires pour le modding.
+
+- **Custom Transitions** : Transitions personnalisées
+- **Config Attributes** : Chargement/validation auto des configs + intégration ConfigLib
+- **Auto Registry & Auto Patcher** : Automatisation
+- **Enregistrement de commandes** basé sur attributs
+
+??? info "Requis par"
+    - :material-alert: [Wear and Tear](../gameplay/survie.md#wear-and-tear) : Système d'usure des machines
+
+### NEMI (Not Enough Map Icons)
+
+![NEMI](https://moddbcdn.vintagestory.at/nemi.png){ align=right width=80 }
+
+Ajoute **48+ icônes de waypoint** personnalisables pour la carte.
+
+### Catégories d'icônes
+| Type | Exemples |
+|------|----------|
+| Utilitaires | Enclume, hache, coffre, flacon, pelle |
+| Nature | Papillon, poisson, semis, araignée, cristal |
+| Bâtiments | Feu de camp, tente, tour de guet |
+| Symboles | Croix, exclamation, question, cœur, diamant |
+| Alphabet | Lettres A-Z |
+| Spéciaux | Biohazard, radioactif, dragon, drapeau |
+
+!!! info "Installation client"
+    Ce mod est **côté client uniquement**. Chaque joueur doit l'installer individuellement.
 
 ---
 

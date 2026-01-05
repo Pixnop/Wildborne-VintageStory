@@ -5,7 +5,7 @@ description: Mods de stockage du modpack Wildborne
 
 # :package: Stockage & Organisation
 
-**8 mods** pour mieux organiser vos ressources et votre base.
+**9 mods** pour mieux organiser vos ressources et votre base.
 
 ---
 
@@ -15,12 +15,13 @@ description: Mods de stockage du modpack Wildborne
 |-----|---------|-------------|
 | carryon | 1.12.1 | Porter des blocs et conteneurs |
 | foodshelves | 2.3.3 | Étagères dédiées à la nourriture |
-| shelfobsessed | 1.9.1 | Variété d'étagères décoratives |
+| shelfobsessed | 1.9.4 | Variété d'étagères décoratives |
 | sortablestorage | 2.4.4 | Tri automatique des coffres |
 | morepiles | 2.2.0 | Empiler plus de ressources au sol |
 | purposefulstorage | 1.5.1 | Conteneurs spécialisés |
 | tankardsandgoblets | 1.3.4 | Rangement de boissons |
 | storageoptions | 2.0.0 | Râteliers d'armes et étagères simples |
+| immersivechests | 0.2.1 | Visualisation du contenu des coffres |
 
 ---
 
@@ -122,6 +123,32 @@ Conteneurs supplémentaires pour organiser votre équipement.
 ??? info "Mods liés"
     - :material-alert: [Attribute Rendering Lib](bibliotheques.md) : REQUIS pour fonctionner
     - :material-arrow-right: [Combat Overhaul](../gameplay/combat.md#combat-overhaul) : Rangement des équipements de combat
+
+---
+
+## Immersive Chests
+
+Visualisez le contenu de vos coffres sans les ouvrir.
+
+### Fonctionnement
+- Les **objets stockés** apparaissent visuellement dans le coffre
+- Les objets **grandissent** proportionnellement à la taille de la pile
+- Les **outils** ont des positions fixes et restent visibles à demi-ouvert
+
+### Conteneurs compatibles
+- Coffres diagonaux
+- Coffres en roseaux
+- Malles/troncs
+
+### Configuration
+Le fichier `ImmersiveChests.Toolposes.json` permet de personnaliser le positionnement des outils. Les changements s'appliquent en temps réel.
+
+!!! info "BETA"
+    Ce mod est en version beta. Quelques artefacts visuels peuvent apparaître avec certains objets.
+
+??? info "Mods liés"
+    - :material-arrow-right: [Food Shelves](#food-shelves) : Alternative pour la nourriture
+    - :material-arrow-right: [Shelf Obsessed](#shelf-obsessed) : Étagères avec affichage visuel
 
 ---
 

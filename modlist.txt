@@ -14,6 +14,7 @@ pipeleaf
 tankardsandgoblets
 stonebakeoven
 betterfirepit
+manualdishes
 
 # Faune - Mammifères
 bovinae
@@ -74,6 +75,7 @@ cooperativecombatrework
 coopsynergy
 quiversandsheaths
 bloodtrail
+dodgemaster
 
 # Armures & Équipement
 fadynasties
@@ -85,6 +87,7 @@ fatemplar
 faviking
 favarangian
 canjewelry
+toolbelt
 
 # Compétences & Progression
 xskills
@@ -94,6 +97,7 @@ theworkingclasses
 
 # Artisanat
 chiseltools
+chiseledblockretention
 millwright
 smithingplus
 stonequarry
@@ -103,6 +107,9 @@ shearlib
 tailorsdelight
 claywheel
 stickisolation
+riverwaterwheels
+expandedmolds
+bricklayers
 
 # Monde & Génération
 betterruins
@@ -112,6 +119,8 @@ em
 materialneeds
 mngeology
 terraprety
+th3dungeon
+hydraulics
 
 # Agriculture & Jardin
 composter
@@ -124,6 +133,16 @@ purposefulstorage
 shelfobsessed
 sortablestorage
 storageoptions
+immersivechests
+
+# Mouvement & Exploration
+catchledge
+climbmountain
+crawlanddive
+vaultandroll
+
+# Construction
+vsroofing
 
 # QoL
 carryon
@@ -141,16 +160,25 @@ walkingstick
 pelaguswinds
 realsmoke
 enhancedhandbook
+clickuptorches
+fallingtree
+rubberbandaid
+canoemode
 
 # Décoration
 apelanterns
 
+# Durabilité
+wearandtear
+
 # Traders
 bettertraders
 
+# Divers
+nemi
+
 # Bibliothèques
 attributerenderinglibrary
-cbr
 commonlib
 configlib
 overhaullib
@@ -159,3 +187,4 @@ xlib
 vsinstrumentsbase
 vsinstruments_quackpack
 bettertranslations
+insanitylib

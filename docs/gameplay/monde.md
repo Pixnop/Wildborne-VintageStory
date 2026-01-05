@@ -5,7 +5,7 @@ description: Mods de génération du monde du modpack Wildborne
 
 # :world_map: Monde & Génération
 
-**6 mods** qui transforment la génération du monde et son contenu.
+**7 mods** qui transforment la génération du monde et son contenu.
 
 ---
 
@@ -17,8 +17,9 @@ description: Mods de génération du monde du modpack Wildborne
 | rivers | 4.7.3 | Système de vraies rivières |
 | bettertraders | 0.1.0 | Marchands avec inventaires améliorés |
 | terraprety | 7.9.0 | Refonte majeure du worldgen (océans, continents) |
-| materialneeds | 1.1.11 | Centaines de matériaux de construction |
-| mngeology | 1.0.1 | 10 nouveaux types de pierres |
+| materialneeds | 1.1.13 | Centaines de matériaux de construction |
+| mngeology | 1.0.4 | 10 nouveaux types de pierres |
+| th3dungeon | 0.4.5 | Génération procédurale de donjons souterrains |
 
 ---
 
@@ -159,6 +160,32 @@ Enrichit la diversité géologique et fournit de nouvelles sources de matériaux
     - :material-alert: [Material Needs](#material-needs) : REQUIS comme base
     - :material-arrow-right: [Stone Quarry](artisanat.md#stone-quarry) : Extraction des nouvelles pierres
     - :material-arrow-right: [Prospect Together](../qol/qualite-de-vie.md#prospect-together) : Prospection des nouveaux minerais
+
+---
+
+## Ancient Dungeons (Th3Dungeon)
+
+Génération procédurale de donjons souterrains avec un framework extensible.
+
+### Génération
+- **Donjons procéduraux** utilisant un système de salles connectées
+- Salles **fabriquées à la main** (schematics Vintage Story)
+- Génération uniquement dans les **nouveaux chunks** après installation du mod
+- Évite l'eau et les régions océaniques
+
+### Configuration
+- **Entrées en surface** : activables ou désactivables
+- **Renforcement des blocs** : optionnel
+- **Remplacement des roches** : adaptation aux pierres locales
+- Commande admin : `/mapth3dungeons [rayon]` pour localiser les donjons
+
+### Butin & Dangers
+Les donjons contiennent du **loot** proportionnel à leur difficulté et des **spawners de mobs**. Préparez-vous avant d'y entrer !
+
+??? info "Mods liés"
+    - :material-arrow-right: [Better Ruins](#better-ruins) : Compatible, génère en plus des ruines de surface
+    - :material-arrow-right: [Combat Overhaul](combat.md#combat-overhaul) : Combat dans les donjons
+    - :material-arrow-right: [Auto Map Markers](../qol/qualite-de-vie.md#auto-map-markers) : Marquage des entrées découvertes
 
 ---
 

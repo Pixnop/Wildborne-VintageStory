@@ -1,0 +1,50 @@
+[
+  {
+    "op": "replace",
+    "file": "hydraulics:recipes/grid/waterwheels",
+    "path": "/0/ingredients/N/code",
+    "value": "game:metalnailsandstrips-*"
+  },
+  {
+    "op": "add",
+    "file": "hydraulics:recipes/grid/waterwheels",
+    "path": "/0/ingredients/N/allowedVariants",
+    "value": ["tinbronze", "bismuthbronze", "blackbronze"]
+  },
+  {
+    "op": "replace",
+    "file": "hydraulics:recipes/grid/waterwheels",
+    "path": "/0/ingredients/P/code",
+    "value": "game:metalplate-*"
+  },
+  {
+    "op": "add",
+    "file": "hydraulics:recipes/grid/waterwheels",
+    "path": "/0/ingredients/P/allowedVariants",
+    "value": ["tinbronze", "bismuthbronze", "blackbronze"]
+  },
+  {
+    "op": "replace",
+    "file": "hydraulics:recipes/grid/waterwheels",
+    "path": "/1/ingredients/N/code",
+    "value": "game:metalnailsandstrips-*"
+  },
+  {
+    "op": "add",
+    "file": "hydraulics:recipes/grid/waterwheels",
+    "path": "/1/ingredients/N/allowedVariants",
+    "value": ["tinbronze", "bismuthbronze", "blackbronze"]
+  },
+  {
+    "op": "replace",
+    "file": "hydraulics:recipes/grid/waterwheels",
+    "path": "/1/ingredients/P/code",
+    "value": "game:metalplate-*"
+  },
+  {
+    "op": "add",
+    "file": "hydraulics:recipes/grid/waterwheels",
+    "path": "/1/ingredients/P/allowedVariants",
+    "value": ["tinbronze", "bismuthbronze", "blackbronze"]
+  }
+]

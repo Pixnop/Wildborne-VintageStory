@@ -5,7 +5,7 @@ description: Mods de combat du modpack Wildborne
 
 # :crossed_swords: Combat & Armes
 
-**16 mods** pour un système de combat entièrement repensé.
+**17 mods** pour un système de combat entièrement repensé.
 
 ---
 
@@ -13,22 +13,24 @@ description: Mods de combat du modpack Wildborne
 
 | Mod | Version | Description |
 |-----|---------|-------------|
-| combatoverhaul | 0.11.0 | Refonte complète du système de combat |
-| armory | 1.7.0 | Arsenal d'armes supplémentaires |
-| maltiezcrossbows | 1.6.8 | Système d'arbalètes complet |
-| maltiezfirearms | 1.5.4 | Armes à feu historiques |
-| quiversandsheaths | 0.6.6 | Carquois et fourreaux modulaires |
+| combatoverhaul | 0.12.7 | Refonte complète du système de combat |
+| armory | 1.8.3 | Arsenal d'armes supplémentaires |
+| maltiezcrossbows | 1.6.9 | Système d'arbalètes complet |
+| maltiezfirearms | 1.5.5 | Armes à feu historiques |
+| quiversandsheaths | 0.6.14 | Carquois et fourreaux modulaires |
 | bloodtrail | 1.1.8 | Traces de sang pour pistage |
 | cooperativecombatrework | 1.0.0 | Mécaniques de combat coopératif |
 | coopsynergy | 0.1.0 | Synergies entre joueurs en coop |
+| dodgemaster | 1.2.3 | Système d'esquive directionnel |
 | fadynasties | 1.2.5 | Armures dynasties chinoises |
 | fagothic | 1.3.1 | Armure style gothique |
 | fagreenwich | 1.4.2 | Armure style Greenwich |
 | fahussar | 1.1.3 | Armure style Hussard |
 | falandsknecht | 1.2.2 | Armure style Landsknecht |
 | fatemplar | 1.4.3 | Armure style Templier |
-| faviking | 1.1.0 | Armure style Viking |
-| canjewelry | 0.5.15 | Bijoux avec bonus enchâssés |
+| favarangian | 1.0.2 | Armure style Varègue |
+| faviking | 1.1.1 | Armure style Viking |
+| canjewelry | 0.5.17 | Bijoux avec bonus enchâssés |
 
 ---
 
@@ -105,6 +107,29 @@ En multijoueur, **Cooperative Combat Rework** et **Coop Synergy** récompensent 
 
 ---
 
+## Dodge Master
+
+Système d'esquive directionnel pour améliorer votre mobilité en combat.
+
+### Mécaniques
+- Appuyez sur **ALT** (configurable) pour esquiver dans la direction de déplacement
+- Esquive vers l'avant si vous êtes immobile
+- La **force d'esquive** varie selon votre vitesse et le poids de l'armure
+- **Cooldown** configurable entre les esquives
+
+### Options avancées
+- **Esquive aérienne** possible (configurable)
+- Compatible avec le mod **Vigor** pour consommer de la stamina
+- **Animations directionnelles** (avant, arrière, gauche, droite)
+- Fonctionne en solo et multijoueur
+
+??? info "Mods liés"
+    - :material-arrow-right: [Combat Overhaul](#combat-overhaul) : Intégration avec le système de stamina
+    - :material-arrow-right: [Vault and Roll](survie.md#vault-and-roll) : Roulade complémentaire
+    - :material-arrow-right: [Crawl and Dive](survie.md#crawl-and-dive) : Plongeon au sol
+
+---
+
 ## Équipement de Combat
 
 ### Quivers And Sheaths
@@ -148,6 +173,7 @@ La série **Forgotten Armory** par AladarCZ ajoute des armures historiques amél
 | **Landsknecht** | Mercenaires allemands | Protection brigandine améliorée |
 | **Templar** | Croisades | Équilibré |
 | **Viking** | Scandinavie médiévale | Agilité et chaleur |
+| **Varangian** | Garde varègue byzantine | Protection équilibrée |
 
 Ces armures sont des **versions améliorées** des armures vanilla, craftées à partir de schémas trouvés dans le monde.
 

@@ -5,7 +5,7 @@ description: Mods d'artisanat du modpack Wildborne
 
 # :hammer: Artisanat & Construction
 
-**8 mods** pour des possibilités de construction et d'artisanat étendues.
+**12 mods** pour des possibilités de construction et d'artisanat étendues.
 
 ---
 
@@ -13,14 +13,18 @@ description: Mods d'artisanat du modpack Wildborne
 
 | Mod | Version | Description |
 |-----|---------|-------------|
-| chiseltools | 1.15.6 | Outils de ciselage avancés pour sculptures détaillées |
-| cbr | 2.0.1 | Les blocs ciselés conservent la chaleur |
+| chiseltools | 1.16.1 | Outils de ciselage avancés pour sculptures détaillées |
+| chiseledblockretention | 2.0.1 | Les blocs ciselés conservent la chaleur |
 | stonequarry | 3.5.1 | Carrière de pierre industrielle |
 | millwright | 1.3.1 | Moulins et mécanismes à eau/vent |
 | smithingplus | 1.8.3 | Forge améliorée avec nouvelles techniques |
 | toolsmith | 1.2.14 | Fabrication d'outils personnalisés |
 | claywheel | 1.1.7 | Tour de potier pour objets en argile |
 | stickisolation | 1.0.0 | Les couches de bâtons isolent vers le haut |
+| bricklayers | 3.1.5 | Blocs décoratifs, verre coloré, poterie et tuiles |
+| expandedmolds | 1.2.0 | Moules de fonderie avancés pour fabrication en masse |
+| vsroofing | 1.1.1 | Système de construction de toits sans grille |
+| riverwaterwheels | 1.1.0 | Roues à eau pour rivières (énergie mécanique) |
 
 ---
 
@@ -206,6 +210,102 @@ Patch utilitaire pour la construction.
 ??? info "Mods liés"
     - :material-arrow-right: [Real Smoke](../qol/qualite-de-vie.md#real-smoke) : Évacuation de la fumée à travers le toit
     - :material-arrow-right: [Chiseled Block Retention](#chiseled-block-retention) : Combine isolation et décoration
+
+---
+
+## Bricklayers
+
+![Bricklayers](https://moddbcdn.vintagestory.at/modicon_bricklayers.png){ align=right width=100 }
+
+Expansion massive des possibilités de construction décorative pour le mid/late game.
+
+### Verre coloré & Glaçage
+- **Verre lumineux** en plusieurs couleurs et niveaux de luminosité
+- **Glaçures colorées** pour céramiques (15 variations)
+- Verre **ciselable** : quartz, fumé, sombre, opaque
+
+### Poterie & Porcelaine
+| Type | Objets |
+|------|--------|
+| Argile colorée | Cruchons, pots de fleurs, vases |
+| Porcelaine | Services à thé, tasses, conteneurs |
+| Décoratif | Tuiles murales, carreaux de sol |
+
+### Briques & Pierre
+- **Petites briques** de pierre
+- **Briques polies** décoratives
+- **Tuiles** attachables aux surfaces
+
+??? info "Mods liés"
+    - :material-alert: [Expanded Matter](monde.md) : REQUIS pour fonctionner
+    - :material-arrow-right: [Chisel Tools](#chisel-tools) : Ciselage du verre coloré
+    - :material-arrow-right: [A Culinary Artillery](cuisine.md#a-culinary-artillery) : Services à thé fonctionnels
+
+---
+
+## Expanded Molds
+
+Étend le système de fonderie avec des moules avancés pour la production en masse.
+
+### Moules standards
+- Variétés supplémentaires de moules basiques
+- **Moule d'anneaux de chaîne** : permet le craft de cotte de mailles en bronze et inférieur
+
+### Moules de production en masse
+Progression multi-étapes pour déverrouiller les moules avancés :
+
+1. Former et cuire des **noyaux de moule** (argile réfractaire)
+2. Forger **plaques, clous et bandes** métalliques
+3. Obtenir **fer à souder et soudure**
+4. Assembler le moule final en grille
+
+### Usure des moules
+Avec le mod **Wear and Tear**, les moules se dégradent à l'usage. Les moules cassés rendent partiellement le métal pour reforge.
+
+??? info "Mods liés"
+    - :material-arrow-right: [Smithing Plus](#smithing-plus) : Forge des composants métalliques
+    - :material-arrow-right: [Wear and Tear](survie.md#wear-and-tear) : Dégradation réaliste des moules
+    - :material-arrow-right: [Stone Quarry](#stone-quarry) : Argile réfractaire
+
+---
+
+## VS Roofing
+
+Système de construction de toits intuitif et immersif sans utiliser la grille de craft.
+
+### Construction
+1. Placez un **cadre de toit** avec des ressources vanilla
+2. Ajoutez les **matériaux de couverture** directement sur le cadre
+3. Le toit se construit progressivement
+
+### Types de toits
+- Toits en **tuiles** de différents matériaux
+- Toits **en verre** pour serres
+- Pentes et angles variés
+
+??? info "Mods liés"
+    - :material-arrow-right: [Bricklayers](#bricklayers) : Tuiles décoratives
+    - :material-arrow-right: [Chisel Tools](#chisel-tools) : Personnalisation des détails
+    - :material-arrow-right: [Stick Isolation](#stick-isolation) : Isolation du toit
+
+---
+
+## River Waterwheels
+
+Roues à eau alimentées par les rivières du mod Rivers.
+
+### Fonctionnement
+- **2 types de roues** à eau configurables
+- Vitesse et couple ajustables dans `hydraulics.json`
+- Génère de l'**énergie mécanique** pour les systèmes d'axes
+
+### Installation
+Placez la roue à eau dans une rivière en l'alignant avec la direction du flux. Elle tournera automatiquement !
+
+??? info "Mods liés"
+    - :material-alert: [Rivers](monde.md#rivers) : REQUIS pour fonctionner
+    - :material-arrow-right: [Millwright](#millwright) : Compatible avec le système de transmission
+    - :material-arrow-right: [Wear and Tear](survie.md#wear-and-tear) : Usure réaliste des composants
 
 ---
 

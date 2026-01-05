@@ -5,7 +5,7 @@ description: Mods QoL du modpack Wildborne
 
 # :sparkles: Qualité de Vie
 
-**10 mods** pour améliorer votre confort de jeu.
+**16 mods** pour améliorer votre confort de jeu.
 
 ---
 
@@ -13,16 +13,21 @@ description: Mods QoL du modpack Wildborne
 
 | Mod | Version | Description |
 |-----|---------|-------------|
-| extrainfo | 1.10.1 | Informations détaillées sur les objets |
-| playerlist | 2.3.4 | Liste des joueurs connectés |
+| extrainfo | 1.11.0 | Informations détaillées sur les objets |
 | playercorpse | 1.12.0 | Corps récupérable après la mort |
 | prospecttogether | 2.1.2 | Prospection partagée en équipe |
 | egocaribautomapmarkers | 4.0.3 | Marqueurs de carte automatiques |
-| alchemy | 1.8.0-rc.5 | Système d'alchimie et potions |
+| alchemy | 1.8.2 | Système d'alchimie et potions |
 | farseer | 1.3.3 | Distance de vue étendue (~4000 blocs) |
 | walkingstick | 1.0.13 | Cannes de marche craftables |
 | pelaguswinds | 1.2.2 | Vent dynamique et réaliste |
 | realsmoke | 1.1.10 | Fumée physique réaliste |
+| clickuptorches | 1.1.1 | Récupération facile des torches |
+| fallingtrees | 0.4.8 | Arbres qui tombent de façon réaliste |
+| canoemode | 1.0.4 | Canoë en écorce de bouleau |
+| toolbelt | 0.3.1 | Ceinture à outils visible |
+| rubberbandaid | 1.0.1 | Fix du rubberbanding serveur |
+| enhancedhandbook | 1.7.1 | Manuel amélioré |
 
 ---
 
@@ -233,6 +238,105 @@ La fumée devient un **élément de gameplay**.
     - :material-arrow-right: [Chisel Tools](../gameplay/artisanat.md#chisel-tools) : Cheminées décoratives fonctionnelles
     - :material-arrow-right: [Stick Isolation](../gameplay/artisanat.md#stick-isolation) : Isolation du toit avec évacuation
     - :material-arrow-right: [Better Firepit](../gameplay/cuisine.md) : Foyers avec gestion de fumée
+
+---
+
+## Click Up Torches
+
+Récupérez vos torches d'un simple clic droit, sans les casser.
+
+- **Clic droit** sur une torche allumée ou éteinte pour la récupérer
+- Plus besoin de casser et attendre qu'elle tombe
+- Simple mais incroyablement pratique
+
+---
+
+## Falling Trees
+
+![Falling Trees](https://moddbcdn.vintagestory.at/fallingtrees.png){ align=right width=100 }
+
+Les arbres tombent de manière réaliste avec l'effet **"TIMBEEEEER"** !
+
+### Mécaniques
+- Les arbres s'effondrent progressivement vers le sol
+- **Effet domino** : un arbre peut en renverser d'autres
+- Les bûches et feuilles se placent au sol à l'impact
+
+### Interactions
+| Matériau | Effet |
+|----------|-------|
+| Verre, tissu, glace | Détruit |
+| Céramique, brique, bois | Fait chanceler |
+| Pierre, terre, gravier | Aucun effet |
+
+### Commandes
+- `/ftplace true/false` : placement ou drop des logs à l'impact
+- `/ftfall` : contrôle de la direction de chute
+
+!!! warning "Attention aux Sequoias"
+    Les sequoias géants peuvent provoquer des lags importants. Évitez de les abattre près de votre base !
+
+---
+
+## Canoe Mode
+
+![Canoe](https://moddbcdn.vintagestory.at/canoemode.png){ align=right width=100 }
+
+Canoë en écorce de bouleau pour le transport fluvial en early/mid game.
+
+### Caractéristiques
+- Capacité : **4 joueurs** ou 1 joueur + conteneurs de stockage
+- Vitesse : **1.5x** (entre radeau et voilier)
+- Pagaies en bois sculptées (plusieurs essences)
+- Lanterne attachable à l'avant
+
+### Portabilité
+Portez le canoë dans un slot de sac vide :
+- **Ctrl+1-4** pour sélectionner le slot
+- **Shift + clic droit** pour ramasser/poser
+
+??? info "Mods liés"
+    - :material-arrow-right: [Rivers](../gameplay/monde.md#rivers) : Navigation fluviale améliorée
+    - :material-arrow-right: [Joy of Sailing](decoration.md#joy-of-sailing) : Alternative voilier
+
+---
+
+## Tool Belt
+
+Ceinture à outils visible et fonctionnelle.
+
+### Utilisation
+- Appuyez sur **V** (configurable) en regardant vers le bas
+- Accédez à vos outils rangés sur la ceinture
+- Les autres joueurs **voient vos outils** sur votre ceinture
+
+### Types de ceintures
+| Ceinture | Slots |
+|----------|-------|
+| Sturdy belt | 2 outils |
+| Heavy tool belt | 4 outils |
+
+### Personnalisation
+- **Touche B** : menu de personnalisation client
+- Positionnement des outils sur la ceinture
+- Mise à jour en temps réel sans redémarrage
+
+---
+
+## Rubberbandaid
+
+Fix technique pour le **rubberbanding** sur les serveurs moddés.
+
+### Problème résolu
+Vintage Story a une limite de 10 synchronisations par tick sur les entités joueurs. Quand cette limite est dépassée, une resync complète se déclenche et provoque l'effet "élastique".
+
+### Solution
+Ce mod augmente cette limite (par défaut à 20) via la config.
+
+!!! tip "Configuration"
+    Commencez à 10 et augmentez progressivement jusqu'à ce que le rubberbanding disparaisse. Utilisez la valeur minimale qui fonctionne.
+
+**Note** : Déjà inclus dans **Hydrate or Diedrate** (activable dans les configs de ce mod).
 
 ---
 
