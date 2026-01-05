@@ -140,7 +140,7 @@ farseer
 walkingstick
 pelaguswinds
 realsmoke
-cbr
+enhancedhandbook
 
 # Décoration
 apelanterns
@@ -150,6 +150,7 @@ bettertraders
 
 # Bibliothèques
 attributerenderinglibrary
+cbr
 commonlib
 configlib
 overhaullib
