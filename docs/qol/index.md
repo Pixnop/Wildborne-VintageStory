@@ -80,7 +80,7 @@ Dépendances techniques.
 | Mod | Version | Description |
 |-----|---------|-------------|
 | extrainfo | 1.10.1 | Informations supplémentaires |
-| playerlist | 2.3.4 | Liste des joueurs |
+| playerlists | 2.3.4 | Liste des joueurs |
 | playercorpse | 1.12.0 | Corps des joueurs |
 | prospecttogether | 2.1.2 | Prospection partagée |
 | egocaribautomapmarkers | 4.0.3 | Marqueurs de carte automatiques |

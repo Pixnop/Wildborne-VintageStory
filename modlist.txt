@@ -97,7 +97,7 @@ theworkingclasses
 
 # Artisanat
 chiseltools
-chiseledblockretention
+cbr
 millwright
 smithingplus
 stonequarry
@@ -107,7 +107,6 @@ shearlib
 tailorsdelight
 claywheel
 stickisolation
-riverwaterwheels
 expandedmolds
 bricklayers
 
@@ -149,7 +148,7 @@ carryon
 egocaribautomapmarkers
 extrainfo
 playercorpse
-playerlist
+playerlists
 prospecttogether
 joyofsailing
 tabletopgames

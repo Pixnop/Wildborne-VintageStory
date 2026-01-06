@@ -14,7 +14,7 @@ description: Mods d'artisanat du modpack Wildborne
 | Mod | Version | Description |
 |-----|---------|-------------|
 | chiseltools | 1.16.1 | Outils de ciselage avancés pour sculptures détaillées |
-| chiseledblockretention | 2.0.1 | Les blocs ciselés conservent la chaleur |
+| cbr | 2.0.1 | Les blocs ciselés conservent la chaleur |
 | stonequarry | 3.5.1 | Carrière de pierre industrielle |
 | millwright | 1.3.1 | Moulins et mécanismes à eau/vent |
 | smithingplus | 1.8.3 | Forge améliorée avec nouvelles techniques |
@@ -24,7 +24,7 @@ description: Mods d'artisanat du modpack Wildborne
 | bricklayers | 3.1.5 | Blocs décoratifs, verre coloré, poterie et tuiles |
 | expandedmolds | 1.2.0 | Moules de fonderie avancés pour fabrication en masse |
 | vsroofing | 1.1.1 | Système de construction de toits sans grille |
-| riverwaterwheels | 1.1.0 | Roues à eau pour rivières (énergie mécanique) |
+| hydraulics | 1.1.0 | Roues à eau pour rivières (énergie mécanique) |
 
 ---
 

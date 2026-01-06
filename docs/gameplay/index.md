@@ -133,7 +133,7 @@ Génération du monde et structures.
 | Mod | Version | Description |
 |-----|---------|-------------|
 | chiseltools | 1.15.6 | Outils de ciselage avancés |
-| chiseledblockretention | 2.0.1 | Blocs ciselés conservent la chaleur |
+| cbr | 2.0.1 | Blocs ciselés conservent la chaleur |
 | stonequarry | 3.5.1 | Carrière de pierre |
 | millwright | 1.3.1 | Moulins et mécanismes |
 | smithingplus | 1.8.3 | Forge améliorée |
