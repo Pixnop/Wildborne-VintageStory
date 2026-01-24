@@ -73,3 +73,9 @@ htmlcov/
 # Documentation drafts
 drafts/
 *.draft.md
+
+# VS Handbook Helper output
+handbook/output/
+
+# Windows artifacts
+nul
